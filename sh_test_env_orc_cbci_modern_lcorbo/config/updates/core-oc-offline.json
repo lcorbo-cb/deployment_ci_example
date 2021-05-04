@@ -1,0 +1,4699 @@
+{
+  "id": "core-oc-offline",
+  "updateCenterVersion": 1,
+  "plugins":   {
+    "cloudbees-nodes-plus":     {
+      "name": "cloudbees-nodes-plus",
+      "url": "cloudbees-nodes-plus.hpi",
+      "version": "1.22",
+      "sha1": "Gn1Yz8CmQVV5chYK1enBRv17AA8=",
+      "buildDate": "Nov 10, 2020",
+      "title": "CloudBees Nodes Plus Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-nodes-plus-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44IiwibmFtZSI6IkVudGVycHJpc2UgTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il1dfV19\">This plugin adds enterprise extensions to the standard node functionality in Jenkins.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.204.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.36",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.25",
+          "optional": false
+        },
+                {
+          "name": "nectar-rbac",
+          "version": "5.30",
+          "optional": true
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.0",
+          "optional": true
+        },
+                {
+          "name": "mailer",
+          "version": "1.29",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-nodes-plus:1.22"
+    },
+    "jdk-tool":     {
+      "name": "jdk-tool",
+      "url": "jdk-tool.hpi",
+      "version": "1.5",
+      "sha1": "b3PT0HNR9oNNBIEREFyruTGdDiU=",
+      "buildDate": "Feb 16, 2021",
+      "title": "Oracle Java SE Development Kit Installer Plugin",
+      "wiki": "https://github.com/jenkinsci/jdk-tool-plugin",
+      "excerpt": "Allows the Oracle Java SE Development Kit (JDK) to be installed via download from Oracle's website.",
+      "requiredCore": "2.176.1",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:jdk-tool:1.5"
+    },
+    "github-branch-source":     {
+      "name": "github-branch-source",
+      "url": "github-branch-source.hpi",
+      "version": "2.9.6",
+      "sha1": "gVTdxoFrHv6vdAA8SARiHPUBdpE=",
+      "buildDate": "Feb 17, 2021",
+      "title": "GitHub Branch Source Plugin",
+      "wiki": "https://github.com/jenkinsci/github-branch-source-plugin",
+      "excerpt": "Multibranch projects and organization folders from GitHub. Maintained by CloudBees, Inc.",
+      "requiredCore": "2.222.4",
+      "compatibleSinceVersion": "2.2.0",
+      "dependencies":       [
+                {
+          "name": "github",
+          "version": "1.32.0",
+          "optional": false
+        },
+                {
+          "name": "jjwt-api",
+          "version": "0.11.2-5.143e44951c52",
+          "optional": false
+        },
+                {
+          "name": "workflow-support",
+          "version": "3.7",
+          "optional": false
+        },
+                {
+          "name": "github-api",
+          "version": "1.122",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:github-branch-source:2.9.6"
+    },
+    "snakeyaml-api":     {
+      "name": "snakeyaml-api",
+      "url": "snakeyaml-api.hpi",
+      "version": "1.27.0",
+      "sha1": "UJ1QbV3bVQqLSoUnGLb658Mv2TA=",
+      "buildDate": "Sep 14, 2020",
+      "title": "Snakeyaml API Plugin",
+      "wiki": "https://github.com/jenkinsci/snakeyaml-api-plugin",
+      "excerpt": "This plugin packages stock Snakeyaml library",
+      "requiredCore": "2.204.6",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:snakeyaml-api:1.27.0"
+    },
+    "cloudbees-support":     {
+      "name": "cloudbees-support",
+      "url": "cloudbees-support.hpi",
+      "version": "3.26",
+      "sha1": "Ycc1pFnQJH58vMc5SlJZ8HEyn8I=",
+      "buildDate": "Dec 11, 2020",
+      "title": "CloudBees Support Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-support-plugin/",
+      "excerpt": "This plugin allows generation of a support request bundle that contains diagnostic information to aid     resolution of support requests.",
+      "requiredCore": "2.164.30-cb-1",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.30",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.4",
+          "optional": false
+        },
+                {
+          "name": "support-core",
+          "version": "2.68",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-support:3.26"
+    },
+    "esr-reporter":     {
+      "name": "esr-reporter",
+      "url": "esr-reporter.hpi",
+      "version": "2.235.0.4",
+      "sha1": "lr5lsYBZ3dcGY54Gd08ihC8zBns=",
+      "buildDate": "Aug 04, 2020",
+      "title": "Elasticsearch Reporter Reporter",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/esr-project-plugin/",
+      "excerpt": "Monitoring Reporter",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "esr-config",
+          "version": "2.235.0.4",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.235.0.2",
+          "optional": false
+        },
+                {
+          "name": "configuration-as-code",
+          "version": "1.36",
+          "optional": true
+        },
+                {
+          "name": "workflow-cps",
+          "version": "2.80",
+          "optional": true
+        },
+                {
+          "name": "workflow-job",
+          "version": "2.38",
+          "optional": true
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.3",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.10.3",
+          "optional": false
+        },
+                {
+          "name": "junit",
+          "version": "1.28",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        },
+                {
+          "name": "unique-id",
+          "version": "2.2.0",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.esr",
+      "gav": "com.cloudbees.esr:esr-reporter:2.235.0.4"
+    },
+    "maven-plugin":     {
+      "name": "maven-plugin",
+      "url": "maven-plugin.hpi",
+      "version": "3.8",
+      "sha1": "LT67LkJ2eorySBKDBxTq5ztmX+8=",
+      "buildDate": "Oct 11, 2020",
+      "title": "Maven Integration plugin",
+      "wiki": "https://github.com/jenkinsci/maven-plugin",
+      "excerpt": "This plug-in provides, for better and for worse, a deep integration of Jenkins and Maven: Automatic triggers between projects depending on SNAPSHOTs, automated configuration of various Jenkins publishers (Junit, ...).",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.10-2.0",
+          "optional": false
+        },
+                {
+          "name": "javadoc",
+          "version": "1.0",
+          "optional": false
+        },
+                {
+          "name": "jsch",
+          "version": "0.1.55.2",
+          "optional": false
+        },
+                {
+          "name": "junit",
+          "version": "1.37",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.32",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "2.12",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.main",
+      "gav": "org.jenkins-ci.main:maven-plugin:3.8"
+    },
+    "cloudbees-plugin-usage":     {
+      "name": "cloudbees-plugin-usage",
+      "url": "cloudbees-plugin-usage.hpi",
+      "version": "2.7",
+      "sha1": "ipCpzh7cYSYw6t1L5XonQwVxvbo=",
+      "buildDate": "Feb 15, 2021",
+      "title": "CloudBees Plugin Usage Analyzer Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-plugin-usage-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44IiwibmFtZSI6IkVudGVycHJpc2UgTWFuYWdlbWVudCJ9LHsib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xMCIsIm5hbWUiOiJFbnRlcnByaXNlIEFuYWx5dGljcyJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il0sWyIxLjMuNi4xLjQuMS4zODE0My4xLjExLjEwIl1dfV19\">The Plugin Usage Analyzer provides data insights into the usage of installed plugins.<\/div>",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-plugin-usage:2.7"
+    },
+    "operations-center-server":     {
+      "name": "operations-center-server",
+      "url": "operations-center-server.hpi",
+      "version": "2.277.0.1",
+      "sha1": "xMcGKOPe8MEZeRGef8sf0yPVOPM=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Server Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-server-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">This plugin provides support for managing other Jenkins masters to Jenkins.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-assurance",
+          "version": "2.138.0.16",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-folders-plus",
+          "version": "3.9",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-monitoring",
+          "version": "2.9",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "operations-center-agent",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.14",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.30",
+          "optional": true
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        },
+                {
+          "name": "node-iterator-api",
+          "version": "1.5.0",
+          "optional": false
+        },
+                {
+          "name": "support-core",
+          "version": "2.68",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-server:2.277.0.1"
+    },
+    "git-client":     {
+      "name": "git-client",
+      "url": "git-client.hpi",
+      "version": "3.6.0",
+      "sha1": "ZpoqgTGVTulRvMhLr0EPpLokkdQ=",
+      "buildDate": "Dec 23, 2020",
+      "title": "Jenkins Git client plugin",
+      "wiki": "https://github.com/jenkinsci/git-client-plugin/blob/master/README.adoc",
+      "excerpt": "Utility plugin for Git support in Jenkins",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.36",
+          "optional": true
+        },
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.10-2.0",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "jsch",
+          "version": "0.1.55.2",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.75",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        },
+                {
+          "name": "trilead-api",
+          "version": "1.0.13",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "markewaite"},
+        {"developerId": "rsandell"},
+        {"developerId": "fcojfernandez"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:git-client:3.6.0"
+    },
+    "scm-api":     {
+      "name": "scm-api",
+      "url": "scm-api.hpi",
+      "version": "2.6.4",
+      "sha1": "DnNCXn0H1VPdtjfDtXo/fMeNb/c=",
+      "buildDate": "Sep 25, 2020",
+      "title": "SCM API Plugin",
+      "wiki": "https://github.com/jenkinsci/scm-api-plugin/blob/master/docs/consumer.adoc",
+      "excerpt": "This plugin provides a new enhanced API for interacting with SCM systems.",
+      "requiredCore": "2.176.4",
+      "compatibleSinceVersion": "2.0.0",
+      "dependencies": [      {
+        "name": "structs",
+        "version": "1.20",
+        "optional": false
+      }],
+      "developers": [{"developerId": "stephenconnolly"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:scm-api:2.6.4"
+    },
+    "google-metadata-plugin":     {
+      "name": "google-metadata-plugin",
+      "url": "google-metadata-plugin.hpi",
+      "version": "0.3.1",
+      "sha1": "zJCXou5NjHZcaEB2RjV3ttPUNoM=",
+      "buildDate": "Nov 26, 2019",
+      "title": "Google Metadata plugin",
+      "wiki": "https://github.com/jenkinsci/google-metadata-plugin/blob/master/docs/Documentation.md",
+      "excerpt": "This plugin provides a basic framework for steps in a build’s lifecycle to attach JSON-serializable metadata to a build (as an invisible action).",
+      "requiredCore": "2.138.4",
+      "dependencies": [      {
+        "name": "jackson2-api",
+        "version": "2.10.0",
+        "optional": false
+      }],
+      "developers":       [
+        {"developerId": "mattmoor"},
+        {"developerId": "tcnghia"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:google-metadata-plugin:0.3.1"
+    },
+    "operations-center-ec2-cloud":     {
+      "name": "operations-center-ec2-cloud",
+      "url": "operations-center-ec2-cloud.hpi",
+      "version": "2.277.0.1",
+      "sha1": "F0wZrdtdN4fxVyYkPqJnkJ7inUU=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Server EC2 Cloud",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-ec2-cloud-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xMyIsIm5hbWUiOiJBbWF6b24gQVdTIFNvbHV0aW9uIFBhY2sifSx7Im9pZCI6IjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuMSIsIm5hbWUiOiJTdGFydGVyIFBhY2sifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuMTMiXSxbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuMSJdXX1dfQ\">Enables EC2 Cloud support in Operations Center Server.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "aws-credentials",
+          "version": "1.28",
+          "optional": false
+        },
+                {
+          "name": "credentials-binding",
+          "version": "1.21",
+          "optional": false
+        },
+                {
+          "name": "ec2",
+          "version": "1.49.1",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-ec2-cloud:2.277.0.1"
+    },
+    "esr-config":     {
+      "name": "esr-config",
+      "url": "esr-config.hpi",
+      "version": "2.235.0.4",
+      "sha1": "YP5EgX6wJNdOx4Oyw8mSWIWJf34=",
+      "buildDate": "Aug 04, 2020",
+      "title": "Elasticsearch Reporter Configuration",
+      "wiki": "https://release-notes.cloudbees.com/product/132",
+      "excerpt": "Provides the Configure Metrics management link.",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.36",
+          "optional": true
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.esr",
+      "gav": "com.cloudbees.esr:esr-config:2.235.0.4"
+    },
+    "email-ext":     {
+      "name": "email-ext",
+      "url": "email-ext.hpi",
+      "version": "2.81",
+      "sha1": "f/oAiSF4Xq4hll0tSO5/+3EQctc=",
+      "buildDate": "Jan 12, 2021",
+      "title": "Email Extension Plugin",
+      "wiki": "https://github.com/jenkinsci/email-ext-plugin",
+      "excerpt": "Allows to configure every aspect of email notifications: when an email is sent, who should receive it and what the email says",
+      "requiredCore": "2.222.4",
+      "compatibleSinceVersion": "2.57.2",
+      "dependencies":       [
+                {
+          "name": "workflow-job",
+          "version": "2.40",
+          "optional": true
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": true
+        },
+                {
+          "name": "config-file-provider",
+          "version": "3.6.2",
+          "optional": true
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.0",
+          "optional": false
+        },
+                {
+          "name": "junit",
+          "version": "1.47",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.32.1",
+          "optional": false
+        },
+                {
+          "name": "matrix-project",
+          "version": "1.18",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.75",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "2.13",
+          "optional": false
+        },
+                {
+          "name": "analysis-core",
+          "version": "1.54",
+          "optional": true
+        }
+      ],
+      "developers":       [
+        {"developerId": "basil"},
+        {"developerId": "slide"},
+        {"developerId": "davidvanlaatum"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:email-ext:2.81"
+    },
+    "github":     {
+      "name": "github",
+      "url": "github.hpi",
+      "version": "1.32.0",
+      "sha1": "VjOp6NVY/BExTrMXhCsaswn1Xdg=",
+      "buildDate": "Oct 30, 2020",
+      "title": "GitHub plugin",
+      "wiki": "https://github.com/jenkinsci/github-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.164.3",
+      "dependencies":       [
+                {
+          "name": "credentials",
+          "version": "2.1.13",
+          "optional": false
+        },
+                {
+          "name": "display-url-api",
+          "version": "2.0",
+          "optional": false
+        },
+                {
+          "name": "git",
+          "version": "3.4.0",
+          "optional": false
+        },
+                {
+          "name": "github-api",
+          "version": "1.114.2",
+          "optional": false
+        },
+                {
+          "name": "plain-credentials",
+          "version": "1.1",
+          "optional": false
+        },
+                {
+          "name": "scm-api",
+          "version": "2.2.0",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.17",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "1.12.1",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "lanwen"},
+        {"developerId": "KostyaSha"}
+      ],
+      "groupId": "com.coravy.hudson.plugins.github",
+      "gav": "com.coravy.hudson.plugins.github:github:1.32.0"
+    },
+    "nectar-license":     {
+      "name": "nectar-license",
+      "url": "nectar-license.hpi",
+      "version": "8.30",
+      "sha1": "8Hu9BTWYGzeaR2VTCfSBx6MIGsU=",
+      "buildDate": "Feb 17, 2021",
+      "title": "CloudBees Jenkins Enterprise License Entitlement Check",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/nectar-license-plugin/",
+      "excerpt": "This plugin is used by CloudBees to give access to the CloudBees Jenkins Enterprise plugins.",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.49",
+          "optional": false
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.nectar.plugins",
+      "gav": "com.cloudbees.nectar.plugins:nectar-license:8.30"
+    },
+    "cloudbees-folders-plus":     {
+      "name": "cloudbees-folders-plus",
+      "url": "cloudbees-folders-plus.hpi",
+      "version": "3.12",
+      "sha1": "LtQGxngweykCG9UrtcICEIA6atI=",
+      "buildDate": "Jan 12, 2021",
+      "title": "CloudBees Folders Plus Plugin",
+      "wiki": "https://release-notes.cloudbees.com/product/9",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4yIiwibmFtZSI6IlNlY3VyaXR5In1dLCJlbnRpdGxlbWVudHMiOlt7ImxpY2Vuc2VWZXJzaW9uIjoiMSIsInN1cHBvcnRlZCI6ZmFsc2V9LHsibGljZW5zZVZlcnNpb24iOiIyIn0seyJsaWNlbnNlVmVyc2lvbiI6IjMiLCJvaWRzIjpbWyIxLjMuNi4xLjQuMS4zODE0My4xLjExLjIiXV19XX0\">This plugin adds enterprise extensions to the CloudBees Folders Plugin.<\/div>",
+      "requiredCore": "2.249.1-cb-3",
+      "compatibleSinceVersion": "1.6",
+      "dependencies":       [
+                {
+          "name": "cloudbees-casc-api",
+          "version": "0.4",
+          "optional": true
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.14",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": true
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-folders-plus:3.12"
+    },
+    "external-notification":     {
+      "name": "external-notification",
+      "url": "external-notification.hpi",
+      "version": "1.5",
+      "sha1": "Cg4NDSL4KBuvrDoMl7/oDbRbfR8=",
+      "buildDate": "Jul 10, 2020",
+      "title": "External Notification Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/external-notification-plugin/",
+      "excerpt": "Implements the HTTP Endpoint for external events",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "notification-api",
+          "version": "1.1",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.10",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins.notification",
+      "gav": "com.cloudbees.jenkins.plugins.notification:external-notification:1.5"
+    },
+    "mailer":     {
+      "name": "mailer",
+      "url": "mailer.hpi",
+      "version": "1.32.1",
+      "sha1": "BwJoiOSxCaZmhTZBESKat7me5Og=",
+      "buildDate": "Sep 03, 2020",
+      "title": "Jenkins Mailer Plugin",
+      "wiki": "https://github.com/jenkinsci/mailer-plugin",
+      "excerpt": "This plugin allows you to configure email notifications for build results",
+      "requiredCore": "2.150.1",
+      "dependencies": [      {
+        "name": "display-url-api",
+        "version": "2.3.1",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:mailer:1.32.1"
+    },
+    "bluesteel-cjoc":     {
+      "name": "bluesteel-cjoc",
+      "url": "bluesteel-cjoc.hpi",
+      "version": "1.2.38",
+      "sha1": "oLNteK+XK1q3AUxwZ5hzmdHy49o=",
+      "buildDate": "Feb 05, 2021",
+      "title": "CloudBees Jenkins Enterprise New User Experience",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/bluesteel-parent-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4yNCIsIm5hbWUiOiJFYXJseSBBZG9wdGVyIFByb2dyYW0ifSx7Im9pZCI6IjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuOCIsIm5hbWUiOiJFbnRlcnByaXNlIEVkaXRpb246IEVudGVycHJpc2UgTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiIsInN1cHBvcnRlZCI6ZmFsc2V9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4yNCJdLFsiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il1dfV19\"><div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-assurance",
+          "version": "2.138.0.19",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-rbac",
+          "version": "5.51",
+          "optional": false
+        },
+                {
+          "name": "operations-center-rbac",
+          "version": "2.263.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.263.0.1",
+          "optional": false
+        },
+                {
+          "name": "master-provisioning-kubernetes",
+          "version": "2.2.6",
+          "optional": true
+        },
+                {
+          "name": "blueocean-rest",
+          "version": "1.24.3",
+          "optional": false
+        },
+                {
+          "name": "pubsub-light",
+          "version": "1.13",
+          "optional": false
+        },
+                {
+          "name": "sse-gateway",
+          "version": "1.21",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins.bluesteel",
+      "gav": "com.cloudbees.jenkins.plugins.bluesteel:bluesteel-cjoc:1.2.38"
+    },
+    "operations-center-kubernetes-cloud":     {
+      "name": "operations-center-kubernetes-cloud",
+      "url": "operations-center-kubernetes-cloud.hpi",
+      "version": "2.277.0.1",
+      "sha1": "26d6DJ7c/Ck0vZnkPDZQXb7lrvk=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Server Kubernetes Cloud",
+      "wiki": "http://release-notes.cloudbees.com/product/Operations+Center+Kubernetes+Cloud+Plugin",
+      "excerpt": "Enables Apache Kubernetes Cloud support in Operations Center Server.",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "kube-agent-management",
+          "version": "1.0.1",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "kubernetes",
+          "version": "1.25.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-kubernetes-cloud:2.277.0.1"
+    },
+    "jackson2-api":     {
+      "name": "jackson2-api",
+      "url": "jackson2-api.hpi",
+      "version": "2.12.1",
+      "sha1": "oEGZYT+CK0AylnUI3vO5VKrd/4g=",
+      "buildDate": "Jan 13, 2021",
+      "title": "Jackson 2 API Plugin",
+      "wiki": "https://github.com/jenkinsci/jackson2-api-plugin",
+      "excerpt": "This plugin exposes the Jackson 2 JSON APIs to other Jenkins plugins.",
+      "requiredCore": "2.222.4",
+      "dependencies": [      {
+        "name": "snakeyaml-api",
+        "version": "1.27.0",
+        "optional": false
+      }],
+      "developers":       [
+        {"developerId": "stephenconnolly"},
+        {"developerId": "oleg_nenashev"},
+        {"developerId": "jvz"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:jackson2-api:2.12.1"
+    },
+    "nectar-vmware":     {
+      "name": "nectar-vmware",
+      "url": "nectar-vmware.hpi",
+      "version": "4.3.9",
+      "sha1": "hpAhE91bhaHi8rdf7IPQpLQbz5I=",
+      "buildDate": "Mar 10, 2020",
+      "title": "CloudBees VMWare Autoscaling Plugin",
+      "wiki": "http://release-notes.cloudbees.com/product/17",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xMiIsIm5hbWUiOiJWTXdhcmUgdlNwaGVyZSBCdWlsZHMifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuMTIiXV19XX0\">This plugin lets you rent machines from VMWare vSphere installations  to use as slaves. These machines act as \"private cloud\" for Jenkins to allocate jobs. The plugin recoganizes statically or dynamically (drop machines into folders)  added machines.    This results in an efficient usage of machines across an organization.<\/div>",
+      "requiredCore": "2.73.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "8.6",
+          "optional": false
+        },
+                {
+          "name": "durable-task",
+          "version": "1.14",
+          "optional": false
+        },
+                {
+          "name": "node-iterator-api",
+          "version": "1.5.0",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.nectar",
+      "gav": "com.cloudbees.nectar:nectar-vmware:4.3.9"
+    },
+    "workflow-scm-step":     {
+      "name": "workflow-scm-step",
+      "url": "workflow-scm-step.hpi",
+      "version": "2.11",
+      "sha1": "AufRWbV5iE5X5amMf2zgzsR9sF4=",
+      "buildDate": "Apr 17, 2020",
+      "title": "Pipeline: SCM Step",
+      "wiki": "https://github.com/jenkinsci/workflow-scm-step-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.60",
+      "dependencies": [      {
+        "name": "workflow-step-api",
+        "version": "2.9",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins.workflow",
+      "gav": "org.jenkins-ci.plugins.workflow:workflow-scm-step:2.11"
+    },
+    "nectar-rbac":     {
+      "name": "nectar-rbac",
+      "url": "nectar-rbac.hpi",
+      "version": "5.52",
+      "sha1": "sIAZnxeT05BF3Phn3mKXT4GpSlU=",
+      "buildDate": "Feb 03, 2021",
+      "title": "CloudBees Role-Based Access Control Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/nectar-rbac-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4yIiwibmFtZSI6IlNlY3VyaXR5In1dLCJlbnRpdGxlbWVudHMiOlt7ImxpY2Vuc2VWZXJzaW9uIjoiMSIsInN1cHBvcnRlZCI6ZmFsc2V9LHsibGljZW5zZVZlcnNpb24iOiIyIn0seyJsaWNlbnNlVmVyc2lvbiI6IjMiLCJvaWRzIjpbWyIxLjMuNi4xLjQuMS4zODE0My4xLjExLjIiXV19XX0\">The Role-Based Access Control plugin gives a Jenkins administrator the ability to     define various security roles that will apply to the system they administer. Once roles     have been defined the Jenkins administrator can assign those roles to groups of users.     The assignment of roles can take place either at the global level, or limited to specific     objects within the system. And, additionally, the Jenkins administrator can even     delegate the management of groups for specific objects to specific users.<\/div>",
+      "requiredCore": "2.235.1-cb-2",
+      "compatibleSinceVersion": "4.0",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "8.6",
+          "optional": false
+        },
+                {
+          "name": "configuration-as-code",
+          "version": "1.43",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.9",
+          "optional": true
+        },
+                {
+          "name": "credentials",
+          "version": "2.1.16",
+          "optional": true
+        },
+                {
+          "name": "matrix-auth",
+          "version": "1.2",
+          "optional": true
+        },
+                {
+          "name": "variant",
+          "version": "1.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.nectar",
+      "gav": "com.cloudbees.nectar:nectar-rbac:5.52"
+    },
+    "token-macro":     {
+      "name": "token-macro",
+      "url": "token-macro.hpi",
+      "version": "2.14",
+      "sha1": "oPNBhFulcNRI7e4c5pVgfZyCx5U=",
+      "buildDate": "Jan 06, 2021",
+      "title": "Token Macro Plugin",
+      "wiki": "https://github.com/jenkinsci/token-macro-plugin",
+      "excerpt": "This plugin adds reusable macro expansion capability for other plugins to use.",
+      "requiredCore": "2.274",
+      "dependencies":       [
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "kohsuke"},
+        {"developerId": "slide_o_mix"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:token-macro:2.14"
+    },
+    "popper-api":     {
+      "name": "popper-api",
+      "url": "popper-api.hpi",
+      "version": "1.16.1-1",
+      "sha1": "OPm7O1rMXCQUfgq9lGJKznclVlQ=",
+      "buildDate": "Feb 01, 2021",
+      "title": "Popper.js API Plugin",
+      "wiki": "https://github.com/jenkinsci/popper-api-plugin",
+      "excerpt": "Provides Popper.js for Jenkins plugins.",
+      "requiredCore": "2.204.6",
+      "dependencies": [],
+      "developers": [{"developerId": "uhafner"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:popper-api:1.16.1-1"
+    },
+    "aws-java-sdk":     {
+      "name": "aws-java-sdk",
+      "url": "aws-java-sdk.hpi",
+      "version": "1.11.930",
+      "sha1": "ry4FAk/xrtL+mk/CN8KHfISAHJc=",
+      "buildDate": "Jan 04, 2021",
+      "title": "Amazon Web Services SDK",
+      "wiki": "https://github.com/jenkinsci/aws-java-sdk-plugin",
+      "excerpt": "This plugin provides AWS SDK for Java for other plugins.",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.10-2.0",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.11.3",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "vlatombe"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:aws-java-sdk:1.11.930"
+    },
+    "cloudbees-license":     {
+      "name": "cloudbees-license",
+      "url": "cloudbees-license.hpi",
+      "version": "9.51",
+      "sha1": "qIySZxRwlFdIxJ+1Zoo5QyVwRuY=",
+      "buildDate": "Feb 20, 2021",
+      "title": "CloudBees License Manager",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-license-plugin/",
+      "excerpt": "This plugin provides licensing services for all the CloudBees licensed plugins.",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies": [      {
+        "name": "async-http-client",
+        "version": "1.7.24",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "com.cloudbees.nectar.plugins",
+      "gav": "com.cloudbees.nectar.plugins:cloudbees-license:9.51"
+    },
+    "google-storage-plugin":     {
+      "name": "google-storage-plugin",
+      "url": "google-storage-plugin.hpi",
+      "version": "1.5.3",
+      "sha1": "VVsGP2+c5P/OHd9onQ5YFoBm1vw=",
+      "buildDate": "Oct 29, 2020",
+      "title": "Google Cloud Storage plugin",
+      "wiki": "http://wiki.jenkins-ci.org/display/JENKINS/Google+Cloud+Storage+Plugin",
+      "excerpt": "This plugin provides the “Google Cloud Storage Uploader” post-build step for publishing build artifacts to Google Cloud Storage.",
+      "requiredCore": "2.164.2",
+      "compatibleSinceVersion": "1.5.0",
+      "dependencies":       [
+                {
+          "name": "workflow-step-api",
+          "version": "2.19",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.2.0",
+          "optional": false
+        },
+                {
+          "name": "google-metadata-plugin",
+          "version": "0.3.1",
+          "optional": false
+        },
+                {
+          "name": "google-oauth-plugin",
+          "version": "1.0.0",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.16",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.17",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "craigdbarber"},
+        {"developerId": "stephenashank"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:google-storage-plugin:1.5.3"
+    },
+    "metrics":     {
+      "name": "metrics",
+      "url": "metrics.hpi",
+      "version": "4.0.2.7",
+      "sha1": "sNDc8VVVQFZmRHvjkwHNiMq/IBo=",
+      "buildDate": "Jan 08, 2021",
+      "title": "Metrics Plugin",
+      "wiki": "https://github.com/jenkinsci/metrics-plugin",
+      "excerpt": "This plugin exposes the Metrics API to Jenkins plugins.",
+      "requiredCore": "2.222.1",
+      "dependencies":       [
+                {
+          "name": "workflow-durable-task-step",
+          "version": "2.35",
+          "optional": true
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.10.2",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "stephenconnolly"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:metrics:4.0.2.7"
+    },
+    "favorite":     {
+      "name": "favorite",
+      "url": "favorite.hpi",
+      "version": "2.3.2",
+      "sha1": "OTpOTGs4lRC2gHcs/Q9pXJvjTro=",
+      "buildDate": "May 21, 2018",
+      "title": "Favorite",
+      "wiki": "https://wiki.jenkins.io/display/JENKINS/Favorite+Plugin",
+      "requiredCore": "1.625.3",
+      "dependencies":       [
+                {
+          "name": "mailer",
+          "version": "1.18",
+          "optional": false
+        },
+                {
+          "name": "matrix-project",
+          "version": "1.7.1",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "2.0",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "lshatzer"},
+        {"developerId": "jamesdumay"},
+        {"developerId": "michaelneale"}
+      ],
+      "groupId": "org.jvnet.hudson.plugins",
+      "gav": "org.jvnet.hudson.plugins:favorite:2.3.2"
+    },
+    "suppress-stack-trace":     {
+      "name": "suppress-stack-trace",
+      "url": "suppress-stack-trace.hpi",
+      "version": "1.6",
+      "sha1": "39A91YUmKma0EO10oIjLBlFJq+s=",
+      "buildDate": "Aug 21, 2020",
+      "title": "Stack Trace Suppression Plugin (deprecated)",
+      "wiki": "https://github.com/jenkinsci/suppress-stack-trace-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.224",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:suppress-stack-trace:1.6"
+    },
+    "okhttp-api":     {
+      "name": "okhttp-api",
+      "url": "okhttp-api.hpi",
+      "version": "3.14.9",
+      "sha1": "nHqnjBSyYKvMzh4Mmt2WUVDSK4A=",
+      "buildDate": "Jun 18, 2020",
+      "title": "OkHttp Plugin",
+      "wiki": "https://github.com/jenkinsci/okhttp-api-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.164.3",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:okhttp-api:3.14.9"
+    },
+    "blueocean-rest":     {
+      "name": "blueocean-rest",
+      "url": "blueocean-rest.hpi",
+      "version": "1.24.4",
+      "sha1": "+5kUNoB0XXTZLS8GT7oB9Bv1tjk=",
+      "buildDate": "Jan 22, 2021",
+      "title": "REST API for Blue Ocean",
+      "wiki": "https://github.com/jenkinsci/blueocean-plugin/blob/master/blueocean/doc/BlueOcean.adoc",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.176.4",
+      "dependencies": [      {
+        "name": "blueocean-commons",
+        "version": "1.24.4",
+        "optional": false
+      }],
+      "developers":       [
+        {"developerId": "scherler"},
+        {"developerId": "cliffmeyers"},
+        {"developerId": "tfennelly"},
+        {"developerId": "vivek"},
+        {"developerId": "kohsuke"},
+        {"developerId": "sophistifunk"},
+        {"developerId": "imeredith"},
+        {"developerId": "michaelneale"},
+        {"developerId": "kzantow"},
+        {"developerId": "i386"},
+        {"developerId": "marcesher"},
+        {"developerId": "dragoonis"},
+        {"developerId": "pragmaticivan"},
+        {"developerId": "PeterDaveHello"},
+        {"developerId": "alexsomai"}
+      ],
+      "groupId": "io.jenkins.blueocean",
+      "gav": "io.jenkins.blueocean:blueocean-rest:1.24.4"
+    },
+    "kubernetes-credentials":     {
+      "name": "kubernetes-credentials",
+      "url": "kubernetes-credentials.hpi",
+      "version": "0.8.0",
+      "sha1": "S/uu6XYCIxBk9LVWgIWFisv3Sds=",
+      "buildDate": "Jan 20, 2021",
+      "title": "Kubernetes Credentials Plugin",
+      "wiki": "https://github.com/jenkinsci/kubernetes-credentials-plugin/",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.5-3.0",
+          "optional": false
+        },
+                {
+          "name": "authentication-tokens",
+          "version": "1.3",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": false
+        },
+                {
+          "name": "docker-commons",
+          "version": "1.14",
+          "optional": true
+        },
+                {
+          "name": "google-oauth-plugin",
+          "version": "0.8",
+          "optional": true
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.11.0",
+          "optional": false
+        },
+                {
+          "name": "kubernetes-client-api",
+          "version": "4.9.2-2",
+          "optional": false
+        },
+                {
+          "name": "plain-credentials",
+          "version": "1.6",
+          "optional": true
+        }
+      ],
+      "developers": [{"developerId": "max_laverse"}],
+      "groupId": "org.jenkinsci.plugins",
+      "gav": "org.jenkinsci.plugins:kubernetes-credentials:0.8.0"
+    },
+    "cloudbees-quiet-start":     {
+      "name": "cloudbees-quiet-start",
+      "url": "cloudbees-quiet-start.hpi",
+      "version": "1.7",
+      "sha1": "U9nvGLM0dXRauRQmIwJriTBUiIQ=",
+      "buildDate": "Jun 16, 2020",
+      "title": "CloudBees Quiet Start Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-quiet-start-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS42IiwibmFtZSI6IkJ1aWxkICYgTWFzdGVyIFJlc2lsaWVuY2UifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNiJdXX1dfQ\">Allows you to request that Jenkins be in the “quieting down” state after a restart.<\/div>",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies": [      {
+        "name": "nectar-license",
+        "version": "8.27",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-quiet-start:1.7"
+    },
+    "cloudbees-jenkins-advisor":     {
+      "name": "cloudbees-jenkins-advisor",
+      "url": "cloudbees-jenkins-advisor.hpi",
+      "version": "3.2.3",
+      "sha1": "bZJcPJtjZLwWQfjrFEEG5QvgxY0=",
+      "buildDate": "Dec 18, 2020",
+      "title": "Jenkins Health Advisor by CloudBees",
+      "wiki": "https://github.com/jenkinsci/cloudbees-jenkins-advisor-plugin",
+      "excerpt": "Get daily reports on security, performance, and/or stability issues found in your Jenkins master by connecting to CloudBees.",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.36.2",
+          "optional": true
+        },
+                {
+          "name": "support-core",
+          "version": "2.72",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "owood"},
+        {"developerId": "kwhetstone"},
+        {"developerId": "aheritier"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:cloudbees-jenkins-advisor:3.2.3"
+    },
+    "operations-center-jnlp-controller":     {
+      "name": "operations-center-jnlp-controller",
+      "url": "operations-center-jnlp-controller.hpi",
+      "version": "2.277.0.1",
+      "sha1": "YDqp4VdXMLK/2F/l1vcdllUGuB4=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center JNLP Agent Controller Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-jnlp-controller-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">Controls JNLP agents and attach them to masters<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "operations-center-agent",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-jnlp-controller:2.277.0.1"
+    },
+    "operations-center-rbac":     {
+      "name": "operations-center-rbac",
+      "url": "operations-center-rbac.hpi",
+      "version": "2.277.0.1",
+      "sha1": "B6QhdE+kSFIA8Js14NiHCjc9Yvo=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Server Role Based Access Control",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-rbac-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">Enables RBAC functionality for Operations Center Server top level items.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "nectar-rbac",
+          "version": "5.51",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-rbac:2.277.0.1"
+    },
+    "config-file-provider":     {
+      "name": "config-file-provider",
+      "url": "config-file-provider.hpi",
+      "version": "3.7.0",
+      "sha1": "Km2wA6TSYgBCAm33WQr1CUnrE0M=",
+      "buildDate": "Sep 18, 2020",
+      "title": "Config File Provider Plugin",
+      "wiki": "https://github.com/jenkinsci/config-file-provider-plugin",
+      "excerpt": "Ability to provide configuration files (e.g. settings.xml for maven, XML, groovy, custom files,...) loaded through the UI which will be copied to the job workspace",
+      "requiredCore": "2.121.3",
+      "compatibleSinceVersion": "2.15",
+      "dependencies":       [
+                {
+          "name": "cloudbees-folder",
+          "version": "5.12",
+          "optional": true
+        },
+                {
+          "name": "credentials",
+          "version": "2.1.4",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.56",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.13",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.14",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "2.0",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "olamy"},
+        {"developerId": "imod"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:config-file-provider:3.7.0"
+    },
+    "bouncycastle-api":     {
+      "name": "bouncycastle-api",
+      "url": "bouncycastle-api.hpi",
+      "version": "2.18",
+      "sha1": "yrGwMaRvVGbNINLxC4PBTwD3k/M=",
+      "buildDate": "Jan 02, 2020",
+      "title": "bouncycastle API Plugin",
+      "wiki": "https://github.com/jenkinsci/bouncycastle-api-plugin",
+      "excerpt": "This plugin provides an stable API to Bouncy Castle related tasks.",
+      "requiredCore": "2.60.3",
+      "dependencies": [],
+      "developers": [{"developerId": "alvarolobato"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:bouncycastle-api:2.18"
+    },
+    "jaxb":     {
+      "name": "jaxb",
+      "url": "jaxb.hpi",
+      "version": "2.3.0.1",
+      "sha1": "CnjA/EoAR17nJaVC7zEu/RjciG0=",
+      "buildDate": "Mar 06, 2019",
+      "title": "JAXB plugin",
+      "wiki": "http://wiki.jenkins-ci.org/display/JENKINS/JAXB+Plugin",
+      "excerpt": "Detached packaging for JAXB for more transparent Java 9+ compatibility",
+      "requiredCore": "2.163",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:jaxb:2.3.0.1"
+    },
+    "ace-editor":     {
+      "name": "ace-editor",
+      "url": "ace-editor.hpi",
+      "version": "1.1",
+      "sha1": "Oe0JR9zZtBR2muKLPrlVZD4l1eA=",
+      "buildDate": "Mar 03, 2016",
+      "title": "JavaScript GUI Lib: ACE Editor bundle plugin",
+      "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/ACE+Editor+Plugin",
+      "requiredCore": "1.580.1",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.ui",
+      "gav": "org.jenkins-ci.ui:ace-editor:1.1"
+    },
+    "docker-commons":     {
+      "name": "docker-commons",
+      "url": "docker-commons.hpi",
+      "version": "1.17",
+      "sha1": "sk5J3arvHSlcr45FCLvIzjJoGoU=",
+      "buildDate": "Jul 01, 2020",
+      "title": "Docker Commons Plugin",
+      "wiki": "https://github.com/jenkinsci/docker-commons-plugin",
+      "excerpt": "APIs useful to Docker-based plugins.",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "authentication-tokens",
+          "version": "1.3",
+          "optional": false
+        },
+                {
+          "name": "credentials-binding",
+          "version": "1.23",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.9",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        },
+                {
+          "name": "pipeline-model-extensions",
+          "version": "1.3.8",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:docker-commons:1.17"
+    },
+    "javadoc":     {
+      "name": "javadoc",
+      "url": "javadoc.hpi",
+      "version": "1.6",
+      "sha1": "2cacmQkT9GAZtSplATykdJXjcpM=",
+      "buildDate": "Aug 03, 2020",
+      "title": "Javadoc Plugin",
+      "wiki": "https://github.com/jenkinsci/javadoc-plugin",
+      "requiredCore": "2.60.3",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:javadoc:1.6"
+    },
+    "ec2":     {
+      "name": "ec2",
+      "url": "ec2.hpi",
+      "version": "1.56",
+      "sha1": "Z1s3iWtk1Ubko/5AVM+JfTle9G4=",
+      "buildDate": "Dec 11, 2020",
+      "title": "Amazon EC2 plugin",
+      "wiki": "https://github.com/jenkinsci/ec2-plugin",
+      "excerpt": "This is a Jenkins plugin to support ephemeral Jenkins agents on Amazon EC2 or other EC2-compatible clouds",
+      "requiredCore": "2.204.6",
+      "compatibleSinceVersion": "1.45",
+      "dependencies":       [
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.10-2.0",
+          "optional": false
+        },
+                {
+          "name": "aws-credentials",
+          "version": "1.11",
+          "optional": false
+        },
+                {
+          "name": "aws-java-sdk",
+          "version": "1.11.821",
+          "optional": false
+        },
+                {
+          "name": "bouncycastle-api",
+          "version": "2.18",
+          "optional": false
+        },
+                {
+          "name": "command-launcher",
+          "version": "1.5",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.11",
+          "optional": false
+        },
+                {
+          "name": "node-iterator-api",
+          "version": "1.5.0",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        },
+                {
+          "name": "trilead-api",
+          "version": "1.0.10",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "thoulen"},
+        {"developerId": "julienduchesne"},
+        {"developerId": "raihaan"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:ec2:1.56"
+    },
+    "operations-center-context":     {
+      "name": "operations-center-context",
+      "url": "operations-center-context.hpi",
+      "version": "2.277.0.1",
+      "sha1": "K0yxmwWPKUd/jU9PpduSl+wVSjA=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Context",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-context-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">This plugin provides an API to resolve the context of a Jenkins instances within an Operations Center cluster.<\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-folders-plus",
+          "version": "3.9",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-monitoring",
+          "version": "2.9",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-template",
+          "version": "4.45",
+          "optional": true
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "maven-plugin",
+          "version": "3.6",
+          "optional": true
+        },
+                {
+          "name": "workflow-job",
+          "version": "2.38",
+          "optional": true
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.22",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.14",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.30",
+          "optional": true
+        },
+                {
+          "name": "mapdb-api",
+          "version": "1.0.9.0",
+          "optional": false
+        },
+                {
+          "name": "matrix-project",
+          "version": "1.14",
+          "optional": true
+        },
+                {
+          "name": "mesos",
+          "version": "0.14.1",
+          "optional": true
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": true
+        },
+                {
+          "name": "promoted-builds",
+          "version": "3.5",
+          "optional": true
+        },
+                {
+          "name": "token-macro",
+          "version": "2.12",
+          "optional": false
+        },
+                {
+          "name": "unique-id",
+          "version": "2.2.0",
+          "optional": true
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.common",
+      "gav": "com.cloudbees.operations-center.common:operations-center-context:2.277.0.1"
+    },
+    "ssh-credentials":     {
+      "name": "ssh-credentials",
+      "url": "ssh-credentials.hpi",
+      "version": "1.18.1",
+      "sha1": "+N55R5r0k1AwTd5jxW6Nby5lbxs=",
+      "buildDate": "Jan 14, 2020",
+      "title": "SSH Credentials Plugin",
+      "wiki": "https://github.com/jenkinsci/ssh-credentials-plugin/blob/master/doc/README.md",
+      "excerpt": "Allows storage of SSH credentials in Jenkins",
+      "requiredCore": "2.190.1",
+      "dependencies":       [
+                {
+          "name": "credentials",
+          "version": "2.2.0",
+          "optional": false
+        },
+                {
+          "name": "trilead-api",
+          "version": "1.0.5",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "stephenconnolly"},
+        {"developerId": "oleg_nenashev"},
+        {"developerId": "jvz"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:ssh-credentials:1.18.1"
+    },
+    "saml":     {
+      "name": "saml",
+      "url": "saml.hpi",
+      "version": "1.1.7",
+      "sha1": "LzVue7wbI0CkJS5nVayCzr4ixgY=",
+      "buildDate": "Aug 13, 2020",
+      "title": "SAML Plugin",
+      "wiki": "https://github.com/jenkinsci/saml-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.176.1",
+      "dependencies":       [
+                {
+          "name": "bouncycastle-api",
+          "version": "2.18",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.29",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "benmccann"},
+        {"developerId": "ifernandezcalvo"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:saml:1.1.7"
+    },
+    "jsch":     {
+      "name": "jsch",
+      "url": "jsch.hpi",
+      "version": "0.1.55.2",
+      "sha1": "1/jOEIIaXo921+/Y6KqxnY6RS5I=",
+      "buildDate": "Jan 29, 2020",
+      "title": "Jenkins JSch dependency plugin",
+      "wiki": "https://github.com/jenkinsci/jsch-plugin",
+      "excerpt": "Jenkins plugin that brings the JSch library as a plugin dependency, and provides         an SSHAuthenticatorFactory for using JSch with the ssh-credentials plugin.",
+      "requiredCore": "2.190.1",
+      "dependencies":       [
+                {
+          "name": "ssh-credentials",
+          "version": "1.14",
+          "optional": false
+        },
+                {
+          "name": "trilead-api",
+          "version": "1.0.5",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "ljader"},
+        {"developerId": "zregvart"},
+        {"developerId": "bpedman"},
+        {"developerId": "oleg_nenashev"},
+        {"developerId": "dnusbaum"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:jsch:0.1.55.2"
+    },
+    "github-api":     {
+      "name": "github-api",
+      "url": "github-api.hpi",
+      "version": "1.122",
+      "sha1": "Mq3ifI0ybGQP63j8gRyh4WrNEBA=",
+      "buildDate": "Jan 15, 2021",
+      "title": "GitHub API Plugin",
+      "wiki": "https://github.com/jenkinsci/github-api-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "jjwt-api",
+          "version": "0.11.2-5.143e44951c52",
+          "optional": true
+        },
+                {
+          "name": "okhttp-api",
+          "version": "3.14.9",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.0",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:github-api:1.122"
+    },
+    "cloudbees-assurance":     {
+      "name": "cloudbees-assurance",
+      "url": "cloudbees-assurance.hpi",
+      "version": "2.276.0.1",
+      "sha1": "Ogmg0ezHAPYqIynx02RTpKzgR5M=",
+      "buildDate": "Feb 17, 2021",
+      "title": "Beekeeper Upgrade Assistant Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-assurance-plugin/",
+      "excerpt": "A plugin that provides support to keep CJP instances inside the envelope",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.50",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.29",
+          "optional": false
+        },
+                {
+          "name": "configuration-as-code",
+          "version": "1.36",
+          "optional": true
+        },
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.13-1.0",
+          "optional": false
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.3",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.1",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.7",
+          "optional": true
+        },
+                {
+          "name": "support-core",
+          "version": "2.72",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-assurance:2.276.0.1"
+    },
+    "cloudbees-aborted-builds":     {
+      "name": "cloudbees-aborted-builds",
+      "url": "cloudbees-aborted-builds.hpi",
+      "version": "1.14",
+      "sha1": "2/6sH5wsVLUyrL0rWHfcedd+ipo=",
+      "buildDate": "Aug 10, 2020",
+      "title": "CloudBees Restart Aborted Builds Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-aborted-builds-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS42IiwibmFtZSI6IkJ1aWxkICYgTWFzdGVyIFJlc2lsaWVuY2UifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNiJdXX1dfQ\">Tracks builds interrupted by abrupt halts and offers to restart them.<\/div>",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "7.1",
+          "optional": false
+        },
+                {
+          "name": "durable-task",
+          "version": "1.4",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-aborted-builds:1.14"
+    },
+    "cloudbees-monitoring":     {
+      "name": "cloudbees-monitoring",
+      "url": "cloudbees-monitoring.hpi",
+      "version": "2.11",
+      "sha1": "7Bn0mHOBUW09+Dg1haDSLzFmyuo=",
+      "buildDate": "Dec 23, 2020",
+      "title": "CloudBees Monitoring Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-monitoring-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4zIiwibmFtZSI6IkFuYWx5dGljcyJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4zIl1dfV19\">This plugin provides metrics based monitoring for Jenkins.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.204.3-cb-9",
+      "compatibleSinceVersion": "2.0",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "7.1",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "7.1",
+          "optional": false
+        },
+                {
+          "name": "configuration-as-code",
+          "version": "1.36",
+          "optional": true
+        },
+                {
+          "name": "mailer",
+          "version": "1.30",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-monitoring:2.11"
+    },
+    "echarts-api":     {
+      "name": "echarts-api",
+      "url": "echarts-api.hpi",
+      "version": "4.9.0-3",
+      "sha1": "5eqtQN+R2/qzr6a99XDr7JuQQe4=",
+      "buildDate": "Jan 19, 2021",
+      "title": "ECharts API Plugin",
+      "wiki": "https://github.com/jenkinsci/echarts-api-plugin",
+      "excerpt": "Provides ECharts for Jenkins plugins.",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "jquery3-api",
+          "version": "3.5.1-2",
+          "optional": false
+        },
+                {
+          "name": "plugin-util-api",
+          "version": "1.6.1",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.11.1",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "uhafner"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:echarts-api:4.9.0-3"
+    },
+    "cloudbees-administrative-monitors":     {
+      "name": "cloudbees-administrative-monitors",
+      "url": "cloudbees-administrative-monitors.hpi",
+      "version": "1.0.1",
+      "sha1": "SX2IesMNVMtVlDngPblxQmQp+ls=",
+      "buildDate": "Jun 27, 2019",
+      "title": "CloudBees Administrative Monitors Plugin",
+      "wiki": "https://release-notes.cloudbees.com/product/148",
+      "excerpt": "A collection of Administrative Monitors that can alert Jenkins Administrators to potential     issues in their Jenkins instances",
+      "requiredCore": "2.176.1",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "8.18",
+          "optional": false
+        },
+                {
+          "name": "operations-center-client",
+          "version": "2.150.2.5",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-administrative-monitors:1.0.1"
+    },
+    "active-directory":     {
+      "name": "active-directory",
+      "url": "active-directory.hpi",
+      "version": "2.23",
+      "sha1": "LX+NlT4GLOhYlUuZl3aMc09moDc=",
+      "buildDate": "Dec 24, 2020",
+      "title": "Jenkins Active Directory plugin",
+      "wiki": "https://github.com/jenkinsci/active-directory-plugin",
+      "excerpt": "Enables authentication through Active Directory",
+      "requiredCore": "2.235.5",
+      "compatibleSinceVersion": "2.0",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.35",
+          "optional": true
+        },
+                {
+          "name": "mailer",
+          "version": "1.5",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "kohsuke"},
+        {"developerId": "fbelzunc"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:active-directory:2.23"
+    },
+    "matrix-auth":     {
+      "name": "matrix-auth",
+      "url": "matrix-auth.hpi",
+      "version": "2.6.5",
+      "sha1": "AjW8IRshkPNHQ720zuN6fO8YKdk=",
+      "buildDate": "Jan 21, 2021",
+      "title": "Matrix Authorization Strategy Plugin",
+      "wiki": "https://github.com/jenkinsci/matrix-auth-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.222.1",
+      "compatibleSinceVersion": "2.0",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.35",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.1.0",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:matrix-auth:2.6.5"
+    },
+    "operations-center-license":     {
+      "name": "operations-center-license",
+      "url": "operations-center-license.hpi",
+      "version": "2.277.0.1",
+      "sha1": "BFONAdpH/kwjJx+NDR9mifEo9gU=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Server License Entitlement Check",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-license-plugin/",
+      "excerpt": "Verifies that the installation is properly licensed for Jenkins Operations Center by CloudBees.",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-license:2.277.0.1"
+    },
+    "jjwt-api":     {
+      "name": "jjwt-api",
+      "url": "jjwt-api.hpi",
+      "version": "0.11.2-5.143e44951c52",
+      "sha1": "96eH9vb7kZro0e4IjTW6CNcKSJE=",
+      "buildDate": "Jan 15, 2021",
+      "title": "Java JSON Web Token (JJWT) Plugin",
+      "wiki": "https://github.com/jenkinsci/jjwt-api-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.222.4",
+      "dependencies": [      {
+        "name": "jackson2-api",
+        "version": "2.12.0",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:jjwt-api:0.11.2-5.143e44951c52"
+    },
+    "blueocean-commons":     {
+      "name": "blueocean-commons",
+      "url": "blueocean-commons.hpi",
+      "version": "1.24.4",
+      "sha1": "IGN2qL2izygSf5ng+OFotWTrwws=",
+      "buildDate": "Jan 22, 2021",
+      "title": "Common API for Blue Ocean",
+      "wiki": "https://github.com/jenkinsci/blueocean-plugin/blob/master/blueocean/doc/BlueOcean.adoc",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.176.4",
+      "dependencies": [      {
+        "name": "jackson2-api",
+        "version": "2.10.2",
+        "optional": false
+      }],
+      "developers":       [
+        {"developerId": "scherler"},
+        {"developerId": "cliffmeyers"},
+        {"developerId": "tfennelly"},
+        {"developerId": "vivek"},
+        {"developerId": "kohsuke"},
+        {"developerId": "sophistifunk"},
+        {"developerId": "imeredith"},
+        {"developerId": "michaelneale"},
+        {"developerId": "kzantow"},
+        {"developerId": "i386"},
+        {"developerId": "marcesher"},
+        {"developerId": "dragoonis"},
+        {"developerId": "pragmaticivan"},
+        {"developerId": "PeterDaveHello"},
+        {"developerId": "alexsomai"}
+      ],
+      "groupId": "io.jenkins.blueocean",
+      "gav": "io.jenkins.blueocean:blueocean-commons:1.24.4"
+    },
+    "wikitext":     {
+      "name": "wikitext",
+      "url": "wikitext.hpi",
+      "version": "3.13",
+      "sha1": "8YdgtwZLYicamik+2xxQ9UDJf/o=",
+      "buildDate": "Apr 17, 2020",
+      "title": "CloudBees WikiText Security Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/wikitext-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xIiwibmFtZSI6IlRlYW0gTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xIl1dfV19\">This plugin lets you put wikitext instead of HTML in Jenkins descriptions fields. This is useful for organizations that are worried about XSS attacks on their publicly facing Jenkins instances.<\/div>",
+      "requiredCore": "2.73.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "7.1",
+          "optional": false
+        },
+                {
+          "name": "antisamy-markup-formatter",
+          "version": "1.5",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "kohsuke"}],
+      "groupId": "com.cloudbees.nectar.plugins",
+      "gav": "com.cloudbees.nectar.plugins:wikitext:3.13"
+    },
+    "operations-center-sso":     {
+      "name": "operations-center-sso",
+      "url": "operations-center-sso.hpi",
+      "version": "2.277.0.1",
+      "sha1": "ymkYz4IO6tlwYTdQvqm70Ew/x7Y=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Single Sign-On Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-sso-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">Co-ordinate participating masters and provides SSO<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-sso:2.277.0.1"
+    },
+    "sse-gateway":     {
+      "name": "sse-gateway",
+      "url": "sse-gateway.hpi",
+      "version": "1.24",
+      "sha1": "2+j2eKsorZILQ7ms27bhQYjW0L8=",
+      "buildDate": "Nov 01, 2020",
+      "title": "Server Sent Events (SSE) Gateway Plugin",
+      "wiki": "https://github.com/jenkinsci/sse-gateway-plugin",
+      "excerpt": "Server Sent Events (SSE) Gateway Plugin",
+      "requiredCore": "2.176.4",
+      "dependencies": [      {
+        "name": "pubsub-light",
+        "version": "1.13",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:sse-gateway:1.24"
+    },
+    "cloudbees-unified-ui":     {
+      "name": "cloudbees-unified-ui",
+      "url": "cloudbees-unified-ui.hpi",
+      "version": "1.2",
+      "sha1": "0qlFaL8OeW1jkviwhuqq8Zf9rdU=",
+      "buildDate": "Feb 25, 2021",
+      "title": "CloudBees Unified UI Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-unified-ui-plugin/",
+      "requiredCore": "2.263.4-cb-6",
+      "dependencies":       [
+                {
+          "name": "cloudbees-platform-common",
+          "version": "1.1",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.28",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-unified-ui:1.2"
+    },
+    "esr-feeder":     {
+      "name": "esr-feeder",
+      "url": "esr-feeder.hpi",
+      "version": "2.235.0.4",
+      "sha1": "3yQx0QrAzOnC9H1fhWcskevawB0=",
+      "buildDate": "Aug 04, 2020",
+      "title": "Elasticsearch Reporter Feeder",
+      "wiki": "http://release-notes.cloudbees.com/product/Jenkins+Operations+Center/esr-feeder",
+      "excerpt": "This plugin aggregates and feeds the data to Elasticsearch.",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "esr-config",
+          "version": "2.235.0.4",
+          "optional": false
+        },
+                {
+          "name": "operations-center-elasticsearch-provider",
+          "version": "2.235.0.2",
+          "optional": false
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.3",
+          "optional": false
+        },
+                {
+          "name": "authentication-tokens",
+          "version": "1.3",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.esr",
+      "gav": "com.cloudbees.esr:esr-feeder:2.235.0.4"
+    },
+    "script-security":     {
+      "name": "script-security",
+      "url": "script-security.hpi",
+      "version": "1.76",
+      "sha1": "G0b7O3axbaVEhisX0zeg19PTf34=",
+      "buildDate": "Feb 01, 2021",
+      "title": "Script Security Plugin",
+      "wiki": "https://github.com/jenkinsci/script-security-plugin",
+      "excerpt": "Allows Jenkins administrators to control what in-process scripts can be run by less-privileged users.",
+      "requiredCore": "2.176.4",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:script-security:1.76"
+    },
+    "google-compute-engine":     {
+      "name": "google-compute-engine",
+      "url": "google-compute-engine.hpi",
+      "version": "4.3.5",
+      "sha1": "hHd/pAAqY7Z1qvZ2hptLCIqqzsg=",
+      "buildDate": "Feb 19, 2021",
+      "title": "Google Compute Engine Plugin",
+      "wiki": "https://github.com/jenkinsci/google-compute-engine-plugin",
+      "excerpt": "This plugin allows Jenkins to provision dynamic worker nodes on Google Compute Engine.",
+      "requiredCore": "2.249.3",
+      "compatibleSinceVersion": "4.1.0",
+      "dependencies":       [
+                {
+          "name": "credentials",
+          "version": "2.3.15",
+          "optional": false
+        },
+                {
+          "name": "durable-task",
+          "version": "1.35",
+          "optional": false
+        },
+                {
+          "name": "google-oauth-plugin",
+          "version": "1.0.3",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.1",
+          "optional": false
+        },
+                {
+          "name": "jsch",
+          "version": "0.1.55.2",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        },
+                {
+          "name": "trilead-api",
+          "version": "1.0.13",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "donmccasland"},
+        {"developerId": "tarahernandez"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:google-compute-engine:4.3.5"
+    },
+    "unique-id":     {
+      "name": "unique-id",
+      "url": "unique-id.hpi",
+      "version": "2.2.0",
+      "sha1": "4O+NTdOJqYqIQP6lm5BSXU3wwY0=",
+      "buildDate": "Mar 08, 2019",
+      "title": "Unique ID Library Plugin",
+      "wiki": "https://wiki.jenkins.io/display/JENKINS/Unique+Id+Plugin",
+      "requiredCore": "2.60.3",
+      "compatibleSinceVersion": "2.0",
+      "dependencies": [      {
+        "name": "cloudbees-folder",
+        "version": "5.0",
+        "optional": true
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:unique-id:2.2.0"
+    },
+    "cloudbees-platform-common":     {
+      "name": "cloudbees-platform-common",
+      "url": "cloudbees-platform-common.hpi",
+      "version": "1.3",
+      "sha1": "eSIq6+YtY2sDHWZG1uHgSbp7jCY=",
+      "buildDate": "Feb 23, 2021",
+      "title": "CloudBees Platform Common Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-platform-common-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44IiwibmFtZSI6IkVudGVycHJpc2UgTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiIsInN1cHBvcnRlZCI6ZmFsc2V9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il1dfV19\"><\/div>",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-analytics",
+          "version": "1.27",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.30",
+          "optional": false
+        },
+                {
+          "name": "operations-center-client",
+          "version": "2.249.0.11",
+          "optional": true
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.249.0.8",
+          "optional": true
+        },
+                {
+          "name": "jjwt-api",
+          "version": "0.11.2-3.3ae26ccdac4e",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-platform-common:1.3"
+    },
+    "kubernetes":     {
+      "name": "kubernetes",
+      "url": "kubernetes.hpi",
+      "version": "1.28.7",
+      "sha1": "Ki/5FqeeJAe3BH0A4q71Jgm06Uk=",
+      "buildDate": "Jan 21, 2021",
+      "title": "Kubernetes plugin",
+      "wiki": "https://github.com/jenkinsci/kubernetes-plugin",
+      "excerpt": "Jenkins plugin to run dynamic agents in a Kubernetes cluster",
+      "requiredCore": "2.263",
+      "dependencies":       [
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "workflow-cps",
+          "version": "2.87",
+          "optional": true
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "authentication-tokens",
+          "version": "1.4",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.15",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "durable-task",
+          "version": "1.35",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.1",
+          "optional": false
+        },
+                {
+          "name": "kubernetes-client-api",
+          "version": "4.11.1",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        },
+                {
+          "name": "plain-credentials",
+          "version": "1.7",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.4",
+          "optional": false
+        },
+                {
+          "name": "kubernetes-credentials",
+          "version": "0.7.0",
+          "optional": false
+        },
+                {
+          "name": "pipeline-model-extensions",
+          "version": "1.7.2",
+          "optional": true
+        }
+      ],
+      "developers": [{"developerId": "carlos"}],
+      "groupId": "org.csanchez.jenkins.plugins",
+      "gav": "org.csanchez.jenkins.plugins:kubernetes:1.28.7"
+    },
+    "skip-plugin":     {
+      "name": "skip-plugin",
+      "url": "skip-plugin.hpi",
+      "version": "4.9",
+      "sha1": "o2CiUmyLSJE3sZDB3sUcEU4MhhM=",
+      "buildDate": "Dec 09, 2020",
+      "title": "CloudBees Skip Next Build Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/skip-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xIiwibmFtZSI6IlRlYW0gTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xIl1dfV19\">This plugin allows jobs to be temporarily disabled for a fixed period of time. After the fixed period the job will automatically be re-enabled.     This is usually useful in scenarios when teams are making a lot of changes that are known to make the repository unstable for a period of time. Instead of dealing with false errors, the job can be disabled and automatically woken up.<\/div>",
+      "requiredCore": "2.222.1-cb-7",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "8.25",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.9",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.nectar.plugins",
+      "gav": "com.cloudbees.nectar.plugins:skip-plugin:4.9"
+    },
+    "esr":     {
+      "name": "esr",
+      "url": "esr.hpi",
+      "version": "2.235.0.4",
+      "sha1": "g4TrGVcMw1/NpTw6c0vkoyjQ2Wc=",
+      "buildDate": "Aug 04, 2020",
+      "title": "Elasticsearch Reporter",
+      "wiki": "http://release-notes.cloudbees.com/product/Jenkins+Operations+Center/esr",
+      "excerpt": "Provides insight into the usage and health of your cluster",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "esr-feeder",
+          "version": "2.235.0.4",
+          "optional": false
+        },
+                {
+          "name": "esr-reporter",
+          "version": "2.235.0.4",
+          "optional": false
+        },
+                {
+          "name": "operations-center-clusterops",
+          "version": "2.235.0.2",
+          "optional": true
+        },
+                {
+          "name": "operations-center-elasticsearch-provider",
+          "version": "2.235.0.2",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.235.0.2",
+          "optional": false
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.3",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.esr",
+      "gav": "com.cloudbees.esr:esr:2.235.0.4"
+    },
+    "google-oauth-plugin":     {
+      "name": "google-oauth-plugin",
+      "url": "google-oauth-plugin.hpi",
+      "version": "1.0.3",
+      "sha1": "BzIl8MP9oxKFu0F/I6LXzSWsJ98=",
+      "buildDate": "Jan 28, 2021",
+      "title": "Google OAuth Credentials plugin",
+      "wiki": "https://github.com/jenkinsci/google-oauth-plugin/blob/develop/docs/home.md",
+      "excerpt": "This plugin implements the OAuth Credentials interfaces to surface Google Service Account credentials to Jenkins.",
+      "requiredCore": "2.138.4",
+      "compatibleSinceVersion": "1.0.0",
+      "dependencies":       [
+                {
+          "name": "credentials",
+          "version": "2.3.0",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.10.2",
+          "optional": false
+        },
+                {
+          "name": "oauth-credentials",
+          "version": "0.4",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "astroilov"},
+        {"developerId": "craigdbarber"},
+        {"developerId": "stephenashank"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:google-oauth-plugin:1.0.3"
+    },
+    "operations-center-elasticsearch-provider":     {
+      "name": "operations-center-elasticsearch-provider",
+      "url": "operations-center-elasticsearch-provider.hpi",
+      "version": "2.277.0.1",
+      "sha1": "oZ08vvdvf9AnWyzxRH+HIWHIFkg=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Elasticsearch Provider",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-elasticsearch-provider-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">Extensible framework for location Elasticsearch instances.<\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "authentication-tokens",
+          "version": "1.3",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-elasticsearch-provider:2.277.0.1"
+    },
+    "trilead-api":     {
+      "name": "trilead-api",
+      "url": "trilead-api.hpi",
+      "version": "1.0.13",
+      "sha1": "b0QNITaHPOkrvvHhSoeOiMj5xjM=",
+      "buildDate": "Dec 06, 2020",
+      "title": "Trilead API Plugin",
+      "wiki": "https://github.com/jenkinsci/trilead-api-plugin",
+      "excerpt": "This plugin provides access to Trilead without having to bundle Trilead in Jenkins core",
+      "requiredCore": "2.204",
+      "dependencies": [],
+      "developers":       [
+        {"developerId": "mc1arke"},
+        {"developerId": "kuisathaverat"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:trilead-api:1.0.13"
+    },
+    "cloudbees-blueocean-default-theme":     {
+      "name": "cloudbees-blueocean-default-theme",
+      "url": "cloudbees-blueocean-default-theme.hpi",
+      "version": "0.8",
+      "sha1": "Nv/jB73kZjELVqWxVbnPJqJHH/Q=",
+      "buildDate": "Jun 30, 2020",
+      "title": "CloudBees Blue Ocean Default Theme",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-blueocean-default-theme-plugin/",
+      "excerpt": "A default Blue Ocean theme for CloudBees products",
+      "requiredCore": "2.204.1-cb-2",
+      "dependencies": [      {
+        "name": "blueocean-commons",
+        "version": "1.21.0",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-blueocean-default-theme:0.8"
+    },
+    "ldap":     {
+      "name": "ldap",
+      "url": "ldap.hpi",
+      "version": "2.4",
+      "sha1": "IlK8TqtzRi46veSWJHx+16vyjek=",
+      "buildDate": "Feb 16, 2021",
+      "title": "LDAP Plugin",
+      "wiki": "https://github.com/jenkinsci/ldap-plugin",
+      "excerpt": "Adds LDAP authentication to Jenkins",
+      "requiredCore": "2.266",
+      "compatibleSinceVersion": "1.16",
+      "dependencies": [      {
+        "name": "mailer",
+        "version": "1.32.1",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:ldap:2.4"
+    },
+    "plugin-util-api":     {
+      "name": "plugin-util-api",
+      "url": "plugin-util-api.hpi",
+      "version": "1.6.1",
+      "sha1": "R58sjZUTmOBWbql+Y7mUjzJs350=",
+      "buildDate": "Dec 22, 2020",
+      "title": "Plugin Utilities API Plugin",
+      "wiki": "https://github.com/jenkinsci/plugin-util-api-plugin",
+      "excerpt": "Provides several utility classes that can be used to accelerate plugin development.",
+      "requiredCore": "2.204.6",
+      "dependencies": [],
+      "developers": [{"developerId": "uhafner"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:plugin-util-api:1.6.1"
+    },
+    "variant":     {
+      "name": "variant",
+      "url": "variant.hpi",
+      "version": "1.4",
+      "sha1": "fKq4Sx0NDuODgl7xumC3xM7tk2w=",
+      "buildDate": "Jan 05, 2021",
+      "title": "Variant Plugin",
+      "wiki": "https://github.com/jenkinsci/variant-plugin",
+      "excerpt": "This user-invisible library plugin allows other multi-modal plugins to behave differently depending on where they run.",
+      "requiredCore": "2.249.1",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:variant:1.4"
+    },
+    "kubernetes-client-api":     {
+      "name": "kubernetes-client-api",
+      "url": "kubernetes-client-api.hpi",
+      "version": "4.11.1",
+      "sha1": "HD6wF+IpaesziPxwNSQflY5hAP4=",
+      "buildDate": "Sep 09, 2020",
+      "title": "Kubernetes Client API Plugin",
+      "wiki": "https://wiki.jenkins.io/display/JENKINS/Kubernetes+Client+API+Plugin",
+      "excerpt": "This plugin provides the fabric8.io Kubernetes Client API to plugins.",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "snakeyaml-api",
+          "version": "1.26.4",
+          "optional": false
+        },
+                {
+          "name": "bouncycastle-api",
+          "version": "2.18",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.11.2",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:kubernetes-client-api:4.11.1"
+    },
+    "font-awesome-api":     {
+      "name": "font-awesome-api",
+      "url": "font-awesome-api.hpi",
+      "version": "5.15.2-1",
+      "sha1": "I2GM1OTUU5FHVHq54f4GcGaskBM=",
+      "buildDate": "Jan 31, 2021",
+      "title": "Font Awesome API Plugin",
+      "wiki": "https://github.com/jenkinsci/font-awesome-api-plugin",
+      "excerpt": "Provides the free fonts of Font Awesome for Jenkins plugins.",
+      "requiredCore": "2.204.6",
+      "dependencies": [      {
+        "name": "plugin-util-api",
+        "version": "1.6.1",
+        "optional": false
+      }],
+      "developers": [{"developerId": "uhafner"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:font-awesome-api:5.15.2-1"
+    },
+    "bootstrap4-api":     {
+      "name": "bootstrap4-api",
+      "url": "bootstrap4-api.hpi",
+      "version": "4.6.0-1",
+      "sha1": "xv53wBS+dPR17KksztW4Ltcv7BA=",
+      "buildDate": "Jan 30, 2021",
+      "title": "Bootstrap 4 API Plugin",
+      "wiki": "https://github.com/jenkinsci/bootstrap4-api-plugin",
+      "excerpt": "Provides Bootstrap 4 for Jenkins plugins.",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "font-awesome-api",
+          "version": "5.15.1-1",
+          "optional": false
+        },
+                {
+          "name": "jquery3-api",
+          "version": "3.5.1-2",
+          "optional": false
+        },
+                {
+          "name": "popper-api",
+          "version": "1.16.0-7",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "uhafner"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:bootstrap4-api:4.6.0-1"
+    },
+    "aws-credentials":     {
+      "name": "aws-credentials",
+      "url": "aws-credentials.hpi",
+      "version": "1.28",
+      "sha1": "o+BmyCAtG28S9nwusnpEvKguGKs=",
+      "buildDate": "Sep 02, 2019",
+      "title": "CloudBees AWS Credentials Plugin",
+      "wiki": "https://wiki.jenkins.io/display/JENKINS/CloudBees+AWS+Credentials+Plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.73.3",
+      "dependencies":       [
+                {
+          "name": "aws-java-sdk",
+          "version": "1.11.341",
+          "optional": false
+        },
+                {
+          "name": "credentials-binding",
+          "version": "1.16",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.1.18",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.8.11.3",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.53",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.17",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.2",
+          "optional": false
+        },
+                {
+          "name": "pipeline-model-extensions",
+          "version": "1.3.1",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:aws-credentials:1.28"
+    },
+    "oauth-credentials":     {
+      "name": "oauth-credentials",
+      "url": "oauth-credentials.hpi",
+      "version": "0.4",
+      "sha1": "nogYy2aRM3QCno3zuoCOdxXpIEk=",
+      "buildDate": "Nov 17, 2019",
+      "title": "OAuth Credentials plugin",
+      "wiki": "https://github.com/jenkinsci/oauth-credentials-plugin/blob/master/Documentation.adoc",
+      "excerpt": "This plugin provides interfaces for OAuth credentials in Jenkins.",
+      "requiredCore": "2.138.4",
+      "dependencies": [      {
+        "name": "credentials",
+        "version": "2.3.0",
+        "optional": false
+      }],
+      "developers":       [
+        {"developerId": "mattmoor"},
+        {"developerId": "alecharp"},
+        {"developerId": "varyvol"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:oauth-credentials:0.4"
+    },
+    "operations-center-monitoring":     {
+      "name": "operations-center-monitoring",
+      "url": "operations-center-monitoring.hpi",
+      "version": "2.277.0.1",
+      "sha1": "DDeajlSiPsXguLQ51/PCCvCta4U=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Monitoring Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-monitoring-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4zIiwibmFtZSI6IkFuYWx5dGljcyJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4zIl1dfV19\">Metrics based monitoring for Jenkins Operations Center Server<\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "compatibleSinceVersion": "1.8",
+      "dependencies":       [
+                {
+          "name": "cloudbees-monitoring",
+          "version": "2.9",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-monitoring:2.277.0.1"
+    },
+    "cloudbees-cyberark-credentials":     {
+      "name": "cloudbees-cyberark-credentials",
+      "url": "cloudbees-cyberark-credentials.hpi",
+      "version": "1.0.8",
+      "sha1": "nS9hUwkgXcTBxPcHnWYqBZXCo5o=",
+      "buildDate": "Feb 10, 2021",
+      "title": "CloudBees CyberArk Credentials Provider Plugin",
+      "wiki": "http://release-notes.cloudbees.com/product/CloudBees+CyberArk+Crendentials+Provider+Plugin",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS42IiwibmFtZSI6IkJ1aWxkICYgTWFzdGVyIFJlc2lsaWVuY2UifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNiJdXX1dfQ\">Provides a credentials store backed by a CyberArk Vault.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.222.1-cb-7",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.17",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.7",
+          "optional": false
+        },
+                {
+          "name": "configuration-as-code",
+          "version": "1.38",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-folder",
+          "version": "6.1.0",
+          "optional": true
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.7",
+          "optional": false
+        },
+                {
+          "name": "mapdb-api",
+          "version": "1.0.9.0",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-cyberark-credentials:1.0.8"
+    },
+    "cloudbees-update-center-plugin":     {
+      "name": "cloudbees-update-center-plugin",
+      "url": "cloudbees-update-center-plugin.hpi",
+      "version": "4.51",
+      "sha1": "RyL33eEsBm1EVlEepjseeefsHvI=",
+      "buildDate": "Feb 02, 2021",
+      "title": "CloudBees Update Center Plugin",
+      "wiki": "http://release-notes.cloudbees.com/product/Custom+Update+Center+Plugin",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44IiwibmFtZSI6IkVudGVycHJpc2UgTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il1dfV19\">This plugin provides Jenkins with the ability to host update centers. Administrators can ensure that teams using Jenkins use \"blessed\" version of plugins and binaries. Update Centers can inherit from other update centers thus making it easier to share plugins/binaries across an organization.      Administrators easily setup an Update Center by adding a new job type called \"Update Center\" and uploading the right artifacts.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.263.1-cb-3",
+      "compatibleSinceVersion": "4.0",
+      "dependencies":       [
+                {
+          "name": "cloudbees-uc-data-api",
+          "version": "4.41",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.11",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.6",
+          "optional": false
+        },
+                {
+          "name": "nectar-rbac",
+          "version": "5.46.2",
+          "optional": true
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.1",
+          "optional": false
+        },
+                {
+          "name": "bouncycastle-api",
+          "version": "2.18",
+          "optional": false
+        },
+                {
+          "name": "jdk-tool",
+          "version": "1.4",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-update-center-plugin:4.51"
+    },
+    "workflow-support":     {
+      "name": "workflow-support",
+      "url": "workflow-support.hpi",
+      "version": "3.7",
+      "sha1": "6cwr2HWGCwqXAKcDk4g2cpgrVt8=",
+      "buildDate": "Nov 30, 2020",
+      "title": "Pipeline: Supporting APIs",
+      "wiki": "https://github.com/jenkinsci/workflow-support-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.176.4",
+      "compatibleSinceVersion": "3.0",
+      "dependencies":       [
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "scm-api",
+          "version": "2.6.4",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.75",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins.workflow",
+      "gav": "org.jenkins-ci.plugins.workflow:workflow-support:3.7"
+    },
+    "electricflow":     {
+      "name": "electricflow",
+      "url": "electricflow.hpi",
+      "version": "1.1.19",
+      "sha1": "RABpArsm1f9OcoiRTwQbvFZ9tMg=",
+      "buildDate": "Feb 11, 2021",
+      "title": "CloudBees CD",
+      "wiki": "https://github.com/jenkinsci/electricflow-plugin",
+      "excerpt": "CloudBees CD Application Release Orchestration",
+      "requiredCore": "2.190.3",
+      "dependencies":       [
+                {
+          "name": "pipeline-rest-api",
+          "version": "2.12",
+          "optional": true
+        },
+                {
+          "name": "pipeline-stage-view",
+          "version": "2.12",
+          "optional": true
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.22",
+          "optional": false
+        },
+                {
+          "name": "branch-api",
+          "version": "2.5.5",
+          "optional": true
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.5",
+          "optional": false
+        },
+                {
+          "name": "git",
+          "version": "4.1.0",
+          "optional": true
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.10.3",
+          "optional": false
+        },
+                {
+          "name": "junit",
+          "version": "1.3",
+          "optional": true
+        },
+                {
+          "name": "scm-api",
+          "version": "2.6.3",
+          "optional": true
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.2",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "efpluginsdev"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:electricflow:1.1.19"
+    },
+    "checks-api":     {
+      "name": "checks-api",
+      "url": "checks-api.hpi",
+      "version": "1.3.0",
+      "sha1": "TFmu/cMA4orvpbG48mIoOdHyEFo=",
+      "buildDate": "Jan 27, 2021",
+      "title": "Checks API plugin",
+      "wiki": "https://github.com/jenkinsci/checks-api-plugin",
+      "excerpt": "Defines an API for Jenkins to publish checks to SCM platforms.",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "plugin-util-api",
+          "version": "1.6.1",
+          "optional": false
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "display-url-api",
+          "version": "2.3.3",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "xiongkezhi"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:checks-api:1.3.0"
+    },
+    "antisamy-markup-formatter":     {
+      "name": "antisamy-markup-formatter",
+      "url": "antisamy-markup-formatter.hpi",
+      "version": "2.1",
+      "sha1": "mZ0rC8iJdWalrv8f+bUZV84I884=",
+      "buildDate": "Jul 01, 2020",
+      "title": "OWASP Markup Formatter Plugin",
+      "wiki": "https://github.com/jenkinsci/antisamy-markup-formatter-plugin",
+      "excerpt": "Sanitize HTML markup in user-submitted text to be displayed on the Jenkins UI.",
+      "requiredCore": "2.121.3",
+      "compatibleSinceVersion": "2.0",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:antisamy-markup-formatter:2.1"
+    },
+    "cloudbees-uc-data-api":     {
+      "name": "cloudbees-uc-data-api",
+      "url": "cloudbees-uc-data-api.hpi",
+      "version": "4.43",
+      "sha1": "wcjgz/PMa/+9LhQ0Veq4uJUn+nw=",
+      "buildDate": "Mar 24, 2020",
+      "title": "CloudBees Update Center Data API",
+      "wiki": "https://release-notes.cloudbees.com/product/131",
+      "excerpt": "This API plugin provides a library to manipulate Update Center metadata.",
+      "requiredCore": "2.46.3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.11",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.6",
+          "optional": false
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.24.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-uc-data-api:4.43"
+    },
+    "cloudbees-ssh-slaves":     {
+      "name": "cloudbees-ssh-slaves",
+      "url": "cloudbees-ssh-slaves.hpi",
+      "version": "2.9",
+      "sha1": "PNFw5heM+GSGK92NeVjFSZb+BTE=",
+      "buildDate": "Jan 26, 2021",
+      "title": "CloudBees SSH Build Agents Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-ssh-slaves-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS43IiwibmFtZSI6Ik9wdGltaXplZCBVdGlsaXphdGlvbiJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS43Il1dfV19\">This plugin provides an SSH Build Agents connector based on Apache SSHd.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.249.3-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.36",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.25",
+          "optional": false
+        },
+                {
+          "name": "bouncycastle-api",
+          "version": "2.17",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.0",
+          "optional": false
+        },
+                {
+          "name": "jdk-tool",
+          "version": "1.4",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-ssh-slaves:2.9"
+    },
+    "jquery3-api":     {
+      "name": "jquery3-api",
+      "url": "jquery3-api.hpi",
+      "version": "3.5.1-2",
+      "sha1": "pjzIRDKgFr703vilrTvLU/pwyRw=",
+      "buildDate": "Oct 18, 2020",
+      "title": "JQuery3 API Plugin",
+      "wiki": "https://github.com/jenkinsci/jquery3-api-plugin",
+      "excerpt": "Provides jQuery 3.x for Jenkins plugins.",
+      "requiredCore": "2.204.6",
+      "dependencies": [],
+      "developers": [{"developerId": "uhafner"}],
+      "groupId": "io.jenkins.plugins",
+      "gav": "io.jenkins.plugins:jquery3-api:3.5.1-2"
+    },
+    "cloudbees-analytics":     {
+      "name": "cloudbees-analytics",
+      "url": "cloudbees-analytics.hpi",
+      "version": "1.27",
+      "sha1": "fyxmvmmvsONKNPvMT6onZ0T232g=",
+      "buildDate": "Sep 02, 2020",
+      "title": "CloudBees Analytics Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/cloudbees-analytics-plugin/",
+      "excerpt": "This plugin is used by CloudBees to gather information about product usage patterns. We solely use this information to improve our products.",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-pipeline-policies",
+          "version": "1.2",
+          "optional": true
+        },
+                {
+          "name": "cloudbees-assurance",
+          "version": "2.138.0.19",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.36",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "declarative-pipeline-migration-assistant-api",
+          "version": "1.1.1",
+          "optional": true
+        },
+                {
+          "name": "workflow-api",
+          "version": "2.38",
+          "optional": true
+        },
+                {
+          "name": "workflow-cps",
+          "version": "2.78",
+          "optional": true
+        },
+                {
+          "name": "workflow-job",
+          "version": "2.36",
+          "optional": true
+        },
+                {
+          "name": "workflow-multibranch",
+          "version": "2.20",
+          "optional": true
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.22",
+          "optional": true
+        },
+                {
+          "name": "branch-api",
+          "version": "2.0.19",
+          "optional": true
+        },
+                {
+          "name": "scm-api",
+          "version": "2.6.3",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        },
+                {
+          "name": "pipeline-model-definition",
+          "version": "1.5.1",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:cloudbees-analytics:1.27"
+    },
+    "ssh-agent":     {
+      "name": "ssh-agent",
+      "url": "ssh-agent.hpi",
+      "version": "1.21",
+      "sha1": "HcYXLAYY++PvKnrVybgwyPArNrg=",
+      "buildDate": "Feb 15, 2021",
+      "title": "SSH Agent Plugin",
+      "wiki": "https://github.com/jenkinsci/ssh-agent-plugin",
+      "excerpt": "This plugin allows you to provide SSH credentials to builds via a ssh-agent in Jenkins",
+      "requiredCore": "2.222.4",
+      "compatibleSinceVersion": "1.5",
+      "dependencies":       [
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "bouncycastle-api",
+          "version": "2.16.3",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:ssh-agent:1.21"
+    },
+    "operations-center-notification":     {
+      "name": "operations-center-notification",
+      "url": "operations-center-notification.hpi",
+      "version": "1.2",
+      "sha1": "pPKQXBgLntajUylaKM2src87mtA=",
+      "buildDate": "Jan 26, 2021",
+      "title": "Operations Center Notification",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-notification-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS40IiwibmFtZSI6IkRldmVsb3BlciBQcm9kdWN0aXZpdHkifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNCJdXX1dfQ\">Implements the notification api via Operations Center messaging<\/div>",
+      "requiredCore": "2.249.3-cb-2",
+      "dependencies":       [
+                {
+          "name": "notification-api",
+          "version": "1.5",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.28",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.249.0.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins.notification",
+      "gav": "com.cloudbees.jenkins.plugins.notification:operations-center-notification:1.2"
+    },
+    "operations-center-updatecenter":     {
+      "name": "operations-center-updatecenter",
+      "url": "operations-center-updatecenter.hpi",
+      "version": "2.277.0.1",
+      "sha1": "A1NyKYiKtXZs1k+3r3xHIZmjPq0=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Update Center Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-updatecenter-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44IiwibmFtZSI6IkVudGVycHJpc2UgTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il1dfV19\">Allows managing update center(s) used by client masters from within Operations Center Server<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-update-center-plugin",
+          "version": "4.48",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "nectar-rbac",
+          "version": "5.50",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-updatecenter:2.277.0.1"
+    },
+    "credentials-binding":     {
+      "name": "credentials-binding",
+      "url": "credentials-binding.hpi",
+      "version": "1.24",
+      "sha1": "0NSCWTf1SUFnrqk/9MQNA3DejGk=",
+      "buildDate": "Oct 14, 2020",
+      "title": "Credentials Binding Plugin",
+      "wiki": "https://github.com/jenkinsci/credentials-binding-plugin",
+      "excerpt": "Allows credentials to be bound to environment variables for use from miscellaneous build steps.",
+      "requiredCore": "2.176.4",
+      "dependencies":       [
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.11",
+          "optional": false
+        },
+                {
+          "name": "plain-credentials",
+          "version": "1.7",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.17.4",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:credentials-binding:1.24"
+    },
+    "notification-api":     {
+      "name": "notification-api",
+      "url": "notification-api.hpi",
+      "version": "1.5",
+      "sha1": "4Fh1RSTdpGMwRbZXklxUyjiRyyo=",
+      "buildDate": "Nov 23, 2020",
+      "title": "Notification API",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/notification-api-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS40IiwibmFtZSI6IkRldmVsb3BlciBQcm9kdWN0aXZpdHkifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNCJdXX1dfQ\">Notification API used by plugins to send/receive notification to/from other Jenkins instances<\/div>",
+      "requiredCore": "2.249.3-cb-2",
+      "dependencies":       [
+                {
+          "name": "nectar-license",
+          "version": "8.28",
+          "optional": false
+        },
+                {
+          "name": "configuration-as-code",
+          "version": "1.43",
+          "optional": true
+        },
+                {
+          "name": "variant",
+          "version": "1.2",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins.notification",
+      "gav": "com.cloudbees.jenkins.plugins.notification:notification-api:1.5"
+    },
+    "credentials":     {
+      "name": "credentials",
+      "url": "credentials.hpi",
+      "version": "2.3.15",
+      "sha1": "9VucAXgAurVXdw1rX2WWBDng3jw=",
+      "buildDate": "Feb 10, 2021",
+      "title": "Credentials Plugin",
+      "wiki": "https://github.com/jenkinsci/credentials-plugin/blob/master/docs/README.adoc",
+      "excerpt": "This plugin allows you to store credentials in Jenkins.",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.47",
+          "optional": true
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "stephenconnolly"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:credentials:2.3.15"
+    },
+    "workflow-step-api":     {
+      "name": "workflow-step-api",
+      "url": "workflow-step-api.hpi",
+      "version": "2.23",
+      "sha1": "s+tPkLj8zLpnPOyzs0y5oZ+jl3I=",
+      "buildDate": "Oct 14, 2020",
+      "title": "Pipeline: Step API",
+      "wiki": "https://github.com/jenkinsci/workflow-step-api-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.176.4",
+      "dependencies": [      {
+        "name": "structs",
+        "version": "1.20",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins.workflow",
+      "gav": "org.jenkins-ci.plugins.workflow:workflow-step-api:2.23"
+    },
+    "plain-credentials":     {
+      "name": "plain-credentials",
+      "url": "plain-credentials.hpi",
+      "version": "1.7",
+      "sha1": "GuzUZqD7GvOJF6kN3Y8w26YwnVM=",
+      "buildDate": "Jan 29, 2020",
+      "title": "Plain Credentials Plugin",
+      "wiki": "https://github.com/jenkinsci/plain-credentials-plugin",
+      "excerpt": "Allows use of plain strings and files as credentials.",
+      "requiredCore": "2.138.4",
+      "dependencies": [      {
+        "name": "credentials",
+        "version": "2.2.0",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:plain-credentials:1.7"
+    },
+    "command-launcher":     {
+      "name": "command-launcher",
+      "url": "command-launcher.hpi",
+      "version": "1.5",
+      "sha1": "nqUa9jPZ0gCQcUQd1Y8ckK29jRM=",
+      "buildDate": "Oct 25, 2020",
+      "title": "Command Agent Launcher Plugin",
+      "wiki": "https://github.com/jenkinsci/command-launcher-plugin",
+      "excerpt": "Allows agents to be launched using a specified command.",
+      "requiredCore": "2.190.3",
+      "dependencies": [      {
+        "name": "script-security",
+        "version": "1.75",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:command-launcher:1.5"
+    },
+    "matrix-project":     {
+      "name": "matrix-project",
+      "url": "matrix-project.hpi",
+      "version": "1.18",
+      "sha1": "z/0UbmKyDbOqrVRKzKVDvak4GQM=",
+      "buildDate": "Sep 30, 2020",
+      "title": "Matrix Project Plugin",
+      "wiki": "https://github.com/jenkinsci/matrix-project-plugin",
+      "excerpt": "Multi-configuration (matrix) project type.",
+      "requiredCore": "2.164.3",
+      "dependencies":       [
+                {
+          "name": "junit",
+          "version": "1.29",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.71",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:matrix-project:1.18"
+    },
+    "master-provisioning-kubernetes":     {
+      "name": "master-provisioning-kubernetes",
+      "url": "master-provisioning-kubernetes.hpi",
+      "version": "2.5.23",
+      "sha1": "tTDoOk5GSHnBNVy+fPLsdQn0Cls=",
+      "buildDate": "Feb 17, 2021",
+      "title": "Master Provisioning Kubernetes",
+      "wiki": "https://release-notes.cloudbees.com/product/103",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-analytics",
+          "version": "1.27",
+          "optional": false
+        },
+                {
+          "name": "master-provisioning-core",
+          "version": "2.5.23",
+          "optional": false
+        },
+                {
+          "name": "snakeyaml-api",
+          "version": "1.27.0",
+          "optional": false
+        },
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "docker-commons",
+          "version": "1.16",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.1",
+          "optional": false
+        },
+                {
+          "name": "kubernetes-client-api",
+          "version": "4.11.1",
+          "optional": false
+        },
+                {
+          "name": "support-core",
+          "version": "2.68",
+          "optional": false
+        },
+                {
+          "name": "ace-editor",
+          "version": "1.1",
+          "optional": false
+        },
+                {
+          "name": "kubernetes-credentials",
+          "version": "0.6.2",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.tiger.plugins",
+      "gav": "com.cloudbees.tiger.plugins:master-provisioning-kubernetes:2.5.23"
+    },
+    "async-http-client":     {
+      "name": "async-http-client",
+      "url": "async-http-client.hpi",
+      "version": "1.7.24.3",
+      "sha1": "ekOBHlHA9MuVpWQ9fuOYdYiCukU=",
+      "buildDate": "Dec 17, 2019",
+      "title": "Async Http Client",
+      "wiki": "http://wiki.jenkins-ci.org/display/JENKINS/Async+Http+Client+Plugin",
+      "excerpt": "This plugin provides a shared dependency on the ning.com async-http-client library so that other plugins can co-operate when using this library.",
+      "requiredCore": "1.580.1",
+      "dependencies": [],
+      "developers": [{"developerId": "stephenc"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:async-http-client:1.7.24.3"
+    },
+    "git":     {
+      "name": "git",
+      "url": "git.hpi",
+      "version": "4.5.2",
+      "sha1": "4Tpq9KbdG3qlEBW72ZkiuWJRBJY=",
+      "buildDate": "Jan 08, 2021",
+      "title": "Jenkins Git plugin",
+      "wiki": "https://github.com/jenkinsci/git-plugin/blob/master/README.adoc",
+      "excerpt": "Integrates Jenkins with Git SCM",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.46",
+          "optional": true
+        },
+                {
+          "name": "workflow-scm-step",
+          "version": "2.11",
+          "optional": false
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "git-client",
+          "version": "3.5.1",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.32.1",
+          "optional": false
+        },
+                {
+          "name": "matrix-project",
+          "version": "1.18",
+          "optional": true
+        },
+                {
+          "name": "parameterized-trigger",
+          "version": "2.36",
+          "optional": true
+        },
+                {
+          "name": "promoted-builds",
+          "version": "3.7",
+          "optional": true
+        },
+                {
+          "name": "scm-api",
+          "version": "2.6.4",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.75",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "2.13",
+          "optional": true
+        }
+      ],
+      "developers":       [
+        {"developerId": "markewaite"},
+        {"developerId": "rsandell"},
+        {"developerId": "fcojfernandez"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:git:4.5.2"
+    },
+    "authentication-tokens":     {
+      "name": "authentication-tokens",
+      "url": "authentication-tokens.hpi",
+      "version": "1.4",
+      "sha1": "D0CflVZR6DKQa5jJ647DeciWdlc=",
+      "buildDate": "Jun 23, 2020",
+      "title": "Authentication Tokens API Plugin",
+      "wiki": "https://github.com/jenkinsci/authentication-tokens-plugin",
+      "excerpt": "This plugin provides an API for converting credentials into authentication tokens in Jenkins.",
+      "requiredCore": "2.176.4",
+      "dependencies": [      {
+        "name": "credentials",
+        "version": "1.22",
+        "optional": false
+      }],
+      "developers": [{"developerId": "stephenconnolly"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:authentication-tokens:1.4"
+    },
+    "secure-requester-whitelist":     {
+      "name": "secure-requester-whitelist",
+      "url": "secure-requester-whitelist.hpi",
+      "version": "1.6",
+      "sha1": "i08krl7qX7DVbLob/A6NQ7yY7IU=",
+      "buildDate": "Sep 28, 2020",
+      "title": "Secure Requester Whitelist Plugin",
+      "wiki": "https://github.com/jenkinsci/secure-requester-whitelist-plugin",
+      "excerpt": "Allows an administrator to specify sites trusted to make JSONP or primitive-XPath REST API requests.",
+      "requiredCore": "2.235.1",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:secure-requester-whitelist:1.6"
+    },
+    "cloudbees-folder":     {
+      "name": "cloudbees-folder",
+      "url": "cloudbees-folder.hpi",
+      "version": "6.15",
+      "sha1": "mmV7Vaj3Xmcb2uY8bT3ovx3xiwM=",
+      "buildDate": "Nov 10, 2020",
+      "title": "Folders Plugin",
+      "wiki": "https://github.com/jenkinsci/cloudbees-folder-plugin/",
+      "excerpt": "This plugin allows users to create \"folders\" to organize jobs. Users can define custom taxonomies (like     by project type, organization type etc). Folders are nestable and you can define views within folders. Maintained by CloudBees, Inc.",
+      "requiredCore": "2.204.6",
+      "compatibleSinceVersion": "5.2",
+      "dependencies": [      {
+        "name": "credentials",
+        "version": "2.3.11",
+        "optional": true
+      }],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:cloudbees-folder:6.15"
+    },
+    "user-activity-monitoring":     {
+      "name": "user-activity-monitoring",
+      "url": "user-activity-monitoring.hpi",
+      "version": "1.1.6",
+      "sha1": "IkJ2gdRgfIjk3t+hZZuEtvAbU7o=",
+      "buildDate": "Jun 16, 2020",
+      "title": "User Activity Monitoring Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/user-activity-monitoring-plugin/",
+      "excerpt": "Monitor the access of users to Jenkins",
+      "requiredCore": "2.235.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "jackson2-api",
+          "version": "2.9.8",
+          "optional": false
+        },
+                {
+          "name": "mailer",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers": [{"developerId": "cleclerc"}],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:user-activity-monitoring:1.1.6"
+    },
+    "durable-task":     {
+      "name": "durable-task",
+      "url": "durable-task.hpi",
+      "version": "1.35",
+      "sha1": "fZpqIb/lAE+UL/AjejaOL64h3Io=",
+      "buildDate": "Sep 02, 2020",
+      "title": "Durable Task Plugin",
+      "wiki": "https://github.com/jenkinsci/durable-task-plugin",
+      "excerpt": "Library offering an extension point for processes which can run outside of Jenkins yet be monitored.",
+      "requiredCore": "2.150.1",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:durable-task:1.35"
+    },
+    "junit":     {
+      "name": "junit",
+      "url": "junit.hpi",
+      "version": "1.48",
+      "sha1": "nBvnsJIod9jS32NQVpFFAJqR2NI=",
+      "buildDate": "Dec 23, 2020",
+      "title": "JUnit Plugin",
+      "wiki": "https://github.com/jenkinsci/junit-plugin",
+      "excerpt": "Allows JUnit-format test results to be published.",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "bootstrap4-api",
+          "version": "4.5.3-1",
+          "optional": false
+        },
+                {
+          "name": "checks-api",
+          "version": "1.2.0",
+          "optional": false
+        },
+                {
+          "name": "echarts-api",
+          "version": "4.9.0-2",
+          "optional": false
+        },
+                {
+          "name": "plugin-util-api",
+          "version": "1.6.0",
+          "optional": false
+        },
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "display-url-api",
+          "version": "2.3.4",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.12.0",
+          "optional": false
+        },
+                {
+          "name": "script-security",
+          "version": "1.75",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:junit:1.48"
+    },
+    "apache-httpcomponents-client-4-api":     {
+      "name": "apache-httpcomponents-client-4-api",
+      "url": "apache-httpcomponents-client-4-api.hpi",
+      "version": "4.5.13-1.0",
+      "sha1": "LRs/mWHlSEu3CkW+jeuI2W/Av5U=",
+      "buildDate": "Jan 04, 2021",
+      "title": "Jenkins Apache HttpComponents Client 4.x API Plugin",
+      "wiki": "https://github.com/jenkinsci/apache-httpcomponents-client-4-api-plugin",
+      "excerpt": "Bundles Apache HttpComponents Client 4.x and allows it to be used by Jenkins plugins",
+      "requiredCore": "2.60.3",
+      "dependencies": [],
+      "developers": [{"developerId": "oleg_nenashev"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:apache-httpcomponents-client-4-api:4.5.13-1.0"
+    },
+    "structs":     {
+      "name": "structs",
+      "url": "structs.hpi",
+      "version": "1.20",
+      "sha1": "xqUa0o1rpqp/H+e7YNmi5iBNymk=",
+      "buildDate": "Jul 29, 2019",
+      "title": "Structs Plugin",
+      "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/Structs+plugin",
+      "excerpt": "Library plugin for DSL plugins that need names for Jenkins objects.",
+      "requiredCore": "2.107.3",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:structs:1.20"
+    },
+    "kube-agent-management":     {
+      "name": "kube-agent-management",
+      "url": "kube-agent-management.hpi",
+      "version": "1.1.45",
+      "sha1": "Vu+D+yMTKY2iOwHOMxc/5qm6tuE=",
+      "buildDate": "Feb 03, 2021",
+      "title": "Kube Agent Management plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/kube-agent-management-plugin/",
+      "excerpt": "Provides advanced agent management features to the Kubernetes plugin.",
+      "requiredCore": "2.263",
+      "dependencies":       [
+                {
+          "name": "cloudbees-analytics",
+          "version": "1.27",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.29",
+          "optional": false
+        },
+                {
+          "name": "kubernetes",
+          "version": "1.28.7",
+          "optional": false
+        },
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "workflow-cps",
+          "version": "2.87",
+          "optional": true
+        },
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        },
+                {
+          "name": "pipeline-model-extensions",
+          "version": "1.7.2",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.jenkins.plugins",
+      "gav": "com.cloudbees.jenkins.plugins:kube-agent-management:1.1.45"
+    },
+    "mapdb-api":     {
+      "name": "mapdb-api",
+      "url": "mapdb-api.hpi",
+      "version": "1.0.9.0",
+      "sha1": "G387cGHm0r6itKEuU5drSVeLbyU=",
+      "buildDate": "May 25, 2016",
+      "title": "MapDB API Plugin",
+      "wiki": "http://wiki.jenkins-ci.org/display/JENKINS/MapDB+API+Plugin",
+      "excerpt": "This plugin provides a shared dependency on the MapDB library so that other plugins can co-operate when using this library.",
+      "requiredCore": "1.565",
+      "dependencies": [],
+      "developers": [{"developerId": "stephenc"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:mapdb-api:1.0.9.0"
+    },
+    "operations-center-clusterops":     {
+      "name": "operations-center-clusterops",
+      "url": "operations-center-clusterops.hpi",
+      "version": "2.277.0.1",
+      "sha1": "vkhd18tqGHZ9MW2+ZptuUmhnkiY=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Server Cluster Operations",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-clusterops-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44IiwibmFtZSI6IkVudGVycHJpc2UgTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS44Il1dfV19\">Provides cluster operations for executing against client masters connected to Jenkins Operations Center.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies":       [
+                {
+          "name": "cloudbees-update-center-plugin",
+          "version": "4.48",
+          "optional": false
+        },
+                {
+          "name": "cloudbees-license",
+          "version": "9.42",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.27",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-license",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-updatecenter",
+          "version": "2.277.0.1",
+          "optional": false
+        },
+                {
+          "name": "infradna-backup",
+          "version": "3.38.18",
+          "optional": false
+        },
+                {
+          "name": "token-macro",
+          "version": "2.12",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.server",
+      "gav": "com.cloudbees.operations-center.server:operations-center-clusterops:2.277.0.1"
+    },
+    "ssh-slaves":     {
+      "name": "ssh-slaves",
+      "url": "ssh-slaves.hpi",
+      "version": "1.31.5",
+      "sha1": "1btgk3dAb+kbXvGXvTk+JBrmxgk=",
+      "buildDate": "Jan 10, 2021",
+      "title": "SSH Build Agents plugin",
+      "wiki": "https://github.com/jenkinsci/ssh-slaves-plugin",
+      "excerpt": "Allows to launch agents over SSH, using a Java implementation of the SSH protocol",
+      "requiredCore": "2.222.4",
+      "compatibleSinceVersion": "1.31.0",
+      "dependencies":       [
+                {
+          "name": "credentials",
+          "version": "2.3.14",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18.1",
+          "optional": false
+        },
+                {
+          "name": "trilead-api",
+          "version": "1.0.13",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "stephenconnolly"},
+        {"developerId": "kohsuke"},
+        {"developerId": "olamy"},
+        {"developerId": "mc1arke"},
+        {"developerId": "oleg_nenashev"},
+        {"developerId": "ifernandezcalvo"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:ssh-slaves:1.31.5"
+    },
+    "infradna-backup":     {
+      "name": "infradna-backup",
+      "url": "infradna-backup.hpi",
+      "version": "3.38.30",
+      "sha1": "RKul/AqTM1DvQy2K0ZR4ql6e2pU=",
+      "buildDate": "Jan 28, 2021",
+      "title": "CloudBees Backup Plugin",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/infradna-backup-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xIiwibmFtZSI6IlRlYW0gTWFuYWdlbWVudCJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiJ9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4xIl1dfV19\">This plugin simplifies backing up Jenkins. Administrators can now save hours by easily backing up and recovering from crashes using the backup.  Users can easily create a new job type called \"Backup\" and back up build records, job and system configurations. The backups can be stored on a local machine or a sftp server. The plugin offers multiple retention policies for the records such as keeping the last 'n' records, keep all backups or an exponential decay algorithm to save space.<div class=\"cblicencelegacy\"><b>This plugin requires version 7 or later of the 'CloudBees License Manager' plugin and may require the purchase of additional use-rights from CloudBees, Inc.  <a href=\"https://www.cloudbees.com/plugin-licensing-requirements\">Click for more information<\/a><\/b><\/div><\/div>",
+      "requiredCore": "2.249.2-cb-1",
+      "compatibleSinceVersion": "3.13",
+      "dependencies":       [
+                {
+          "name": "cloudbees-license",
+          "version": "9.36",
+          "optional": false
+        },
+                {
+          "name": "nectar-license",
+          "version": "8.25",
+          "optional": false
+        },
+                {
+          "name": "apache-httpcomponents-client-4-api",
+          "version": "4.5.3-2.0",
+          "optional": false
+        },
+                {
+          "name": "aws-credentials",
+          "version": "1.21",
+          "optional": false
+        },
+                {
+          "name": "aws-java-sdk",
+          "version": "1.11.119",
+          "optional": false
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.0",
+          "optional": false
+        },
+                {
+          "name": "jackson2-api",
+          "version": "2.8.11.2",
+          "optional": false
+        },
+                {
+          "name": "ssh-credentials",
+          "version": "1.18",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.infradna.hudson.plugins",
+      "gav": "com.infradna.hudson.plugins:infradna-backup:3.38.30"
+    },
+    "operations-center-agent":     {
+      "name": "operations-center-agent",
+      "url": "operations-center-agent.hpi",
+      "version": "2.277.0.1",
+      "sha1": "6+Mfd6M6JX75PWwNhvjsd1DmkV4=",
+      "buildDate": "Mar 02, 2021",
+      "title": "Operations Center Agent",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/operations-center-agent-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS41IiwibmFtZSI6IkNvcmUifV0sImVudGl0bGVtZW50cyI6W3sibGljZW5zZVZlcnNpb24iOiIxIiwic3VwcG9ydGVkIjpmYWxzZX0seyJsaWNlbnNlVmVyc2lvbiI6IjIifSx7ImxpY2Vuc2VWZXJzaW9uIjoiMyIsIm9pZHMiOltbIjEuMy42LjEuNC4xLjM4MTQzLjEuMTEuNSJdXX1dfQ\">This plugin provides the shared communications code for Jenkins and Operations Center<\/div>",
+      "requiredCore": "2.277.1-cb-2",
+      "dependencies": [      {
+        "name": "bouncycastle-api",
+        "version": "2.18",
+        "optional": false
+      }],
+      "developers": [],
+      "groupId": "com.cloudbees.operations-center.common",
+      "gav": "com.cloudbees.operations-center.common:operations-center-agent:2.277.0.1"
+    },
+    "node-iterator-api":     {
+      "name": "node-iterator-api",
+      "url": "node-iterator-api.hpi",
+      "version": "1.5.0",
+      "sha1": "EyGb9liaot7HU5P1koKgyUTiM+g=",
+      "buildDate": "Jun 17, 2016",
+      "title": "Node Iterator API Plugin",
+      "wiki": "http://wiki.jenkins-ci.org/display/JENKINS/Node+Iterator+API+Plugin",
+      "excerpt": "This plugin provides support for iterating through all the Node instances that are in use by Jenkins,     even those Node instances that are not traditionally attached to Jenkins. The API exposed by this     plugin can be used by cloud provider plugins to identify unused provisioned resource.",
+      "requiredCore": "1.625.3",
+      "dependencies": [],
+      "developers": [{"developerId": "stephenconnolly"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:node-iterator-api:1.5.0"
+    },
+    "master-provisioning-core":     {
+      "name": "master-provisioning-core",
+      "url": "master-provisioning-core.hpi",
+      "version": "2.5.23",
+      "sha1": "uznjDWEQPKlbQKmifBX/+VPyoS0=",
+      "buildDate": "Feb 17, 2021",
+      "title": "Master Provisioning Core",
+      "wiki": "https://docs.cloudbees.com/docs/release-notes/latest/plugins/master-provisioning-core-plugin/",
+      "excerpt": "<div class=\"cblicence\" data-cblicence=\"eyJwYWNrSW5mbyI6W3sib2lkIjoiMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4yMSIsIm5hbWUiOiJQcml2YXRlIFNhYVMgRWRpdGlvbiJ9XSwiZW50aXRsZW1lbnRzIjpbeyJsaWNlbnNlVmVyc2lvbiI6IjEiLCJzdXBwb3J0ZWQiOmZhbHNlfSx7ImxpY2Vuc2VWZXJzaW9uIjoiMiIsInN1cHBvcnRlZCI6ZmFsc2V9LHsibGljZW5zZVZlcnNpb24iOiIzIiwib2lkcyI6W1siMS4zLjYuMS40LjEuMzgxNDMuMS4xMS4yMSJdXX1dfQ\"><\/div>",
+      "requiredCore": "2.263.1-cb-3",
+      "dependencies":       [
+                {
+          "name": "cloudbees-analytics",
+          "version": "1.27",
+          "optional": false
+        },
+                {
+          "name": "operations-center-context",
+          "version": "2.263.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-clusterops",
+          "version": "2.263.0.1",
+          "optional": true
+        },
+                {
+          "name": "operations-center-monitoring",
+          "version": "2.263.0.1",
+          "optional": false
+        },
+                {
+          "name": "operations-center-server",
+          "version": "2.263.0.1",
+          "optional": false
+        },
+                {
+          "name": "workflow-api",
+          "version": "2.40",
+          "optional": false
+        },
+                {
+          "name": "bouncycastle-api",
+          "version": "2.18",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "4.0.2.6",
+          "optional": false
+        },
+                {
+          "name": "variant",
+          "version": "1.3",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "com.cloudbees.tiger.plugins",
+      "gav": "com.cloudbees.tiger.plugins:master-provisioning-core:2.5.23"
+    },
+    "support-core":     {
+      "name": "support-core",
+      "url": "support-core.hpi",
+      "version": "2.72.1",
+      "sha1": "uBD9N8cVQcFKt+Abth0MQx1Wu/M=",
+      "buildDate": "Feb 12, 2021",
+      "title": "Support Core Plugin",
+      "wiki": "https://github.com/jenkinsci/support-core-plugin",
+      "excerpt": "This plugin provides a common set of classes to assist in generating support bundles.",
+      "requiredCore": "2.204.6",
+      "dependencies":       [
+                {
+          "name": "configuration-as-code",
+          "version": "1.36",
+          "optional": true
+        },
+                {
+          "name": "async-http-client",
+          "version": "1.7.8",
+          "optional": true
+        },
+                {
+          "name": "credentials",
+          "version": "2.3.7",
+          "optional": false
+        },
+                {
+          "name": "metrics",
+          "version": "3.1.2.6",
+          "optional": false
+        },
+                {
+          "name": "structs",
+          "version": "1.20",
+          "optional": false
+        }
+      ],
+      "developers":       [
+        {"developerId": "stephenconnolly"},
+        {"developerId": "christ66"}
+      ],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:support-core:2.72.1"
+    },
+    "display-url-api":     {
+      "name": "display-url-api",
+      "url": "display-url-api.hpi",
+      "version": "2.3.4",
+      "sha1": "qJmOwjTQKhKkQjFBkUjr4KMfDCo=",
+      "buildDate": "Nov 18, 2020",
+      "title": "Display URL API",
+      "wiki": "https://github.com/jenkinsci/display-url-api-plugin",
+      "excerpt": "Provides the DisplayURLProvider extension point to provide alternate URLs for use in notifications",
+      "requiredCore": "2.176.4",
+      "dependencies": [],
+      "developers": [{"developerId": "jdumay"}],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:display-url-api:2.3.4"
+    },
+    "view-job-filters":     {
+      "name": "view-job-filters",
+      "url": "view-job-filters.hpi",
+      "version": "2.3",
+      "sha1": "in62Z2fDWn1ijxSGX0+5vpnBO4I=",
+      "buildDate": "Jun 16, 2020",
+      "title": "View Job Filters",
+      "wiki": "https://github.com/jenkinsci/view-job-filters-plugin",
+      "excerpt": "Manage multiple views and hundreds of jobs much more easily. This plug-in provides more ways to         include/exclude jobs from a view, including filtering by SCM path, and by any job or build status type, as well         as \"chaining\" of filters and negating filters.",
+      "requiredCore": "2.222.4",
+      "dependencies":       [
+                {
+          "name": "workflow-job",
+          "version": "2.38",
+          "optional": true
+        },
+                {
+          "name": "cvs",
+          "version": "2.15",
+          "optional": true
+        },
+                {
+          "name": "email-ext",
+          "version": "2.69",
+          "optional": true
+        },
+                {
+          "name": "git",
+          "version": "4.1.0",
+          "optional": true
+        },
+                {
+          "name": "m2-extra-steps",
+          "version": "1.1.8",
+          "optional": true
+        },
+                {
+          "name": "mailer",
+          "version": "1.32",
+          "optional": true
+        },
+                {
+          "name": "matrix-auth",
+          "version": "2.5",
+          "optional": true
+        },
+                {
+          "name": "matrix-project",
+          "version": "1.14",
+          "optional": true
+        },
+                {
+          "name": "subversion",
+          "version": "2.13.1",
+          "optional": true
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:view-job-filters:2.3"
+    },
+    "workflow-api":     {
+      "name": "workflow-api",
+      "url": "workflow-api.hpi",
+      "version": "2.41",
+      "sha1": "fEDHa6qwxHLfhcOLTpJZmKoPtWk=",
+      "buildDate": "Jan 19, 2021",
+      "title": "Pipeline: API",
+      "wiki": "https://github.com/jenkinsci/workflow-api-plugin",
+      "excerpt": "The Jenkins Plugins Parent POM Project",
+      "requiredCore": "2.176.4",
+      "dependencies":       [
+                {
+          "name": "workflow-step-api",
+          "version": "2.23",
+          "optional": false
+        },
+                {
+          "name": "scm-api",
+          "version": "2.6.4",
+          "optional": false
+        }
+      ],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins.workflow",
+      "gav": "org.jenkins-ci.plugins.workflow:workflow-api:2.41"
+    },
+    "pubsub-light":     {
+      "name": "pubsub-light",
+      "url": "pubsub-light.hpi",
+      "version": "1.13",
+      "sha1": "k8fIqT6iNW77YWhavhyUwYh4pGM=",
+      "buildDate": "Aug 16, 2019",
+      "title": "Jenkins Pub-Sub \"light\" Bus",
+      "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/PubSub+Light+Plugin",
+      "excerpt": "A simple Publish-Subscribe light-weight event bus for Jenkins",
+      "requiredCore": "2.121.1",
+      "dependencies": [],
+      "developers": [],
+      "groupId": "org.jenkins-ci.plugins",
+      "gav": "org.jenkins-ci.plugins:pubsub-light:1.13"
+    }
+  },
+  "signature":   {
+    "correct_digest": "fys7FszPsdsPBiA/gPPsIgSJb9g=",
+    "certificates": ["MIIDyjCCArICCQDjhYDxdF9w9jANBgkqhkiG9w0BAQUFADCBpjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExETAPBgNVBAcTCFNhbiBKb3NlMRgwFgYDVQQKEw9DbG91ZEJlZXMsIEluYy4xEDAOBgNVBAsTB0plbmtpbnMxGjAYBgNVBAMTEUtvaHN1a2UgS2F3YWd1Y2hpMScwJQYJKoZIhvcNAQkBFhhra2F3YWd1Y2hpQGNsb3VkYmVlcy5jb20wHhcNMTExMDIyMTgzMTM2WhcNMjExMDE5MTgzMTM2WjCBpjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExETAPBgNVBAcTCFNhbiBKb3NlMRgwFgYDVQQKEw9DbG91ZEJlZXMsIEluYy4xEDAOBgNVBAsTB0plbmtpbnMxGjAYBgNVBAMTEUtvaHN1a2UgS2F3YWd1Y2hpMScwJQYJKoZIhvcNAQkBFhhra2F3YWd1Y2hpQGNsb3VkYmVlcy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVPr8iuS4BTVjKZ0PvZvfoCkBnNeqVsyjDO5XDdYeGPHbG3D8OIpHZQjgr9IeL+bUF3JEfPS0F0TmNSf0mzrHxGCRsVQcGsDClqFqVnUlG4b9ThcRckYVe+/Wl6DCrGTUI08Ivc7bpnxi+ZxeGtdCGEL6gNyw/t85qs/7JbTbAxXpRs+EWKcC6l8a7N8Uy5xgRxWzPfiF8wuLzrbrJCS0WYV3387eo9RmXqbEVeoAyD7hkcjJb17ZSFv6eJTn0K/Z9i8jmuTqZe6bN/YmP3y4r8tx4z2nx+qFVeJZ7pM7FyRlUAO1qPKjw0pDSGYzoXp3T/1PiBYI09EADQL4dpa5zAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAKx1keEJnlDHlHCsEEyFdmLxlYJ+6CSlrU9B/pJ7ufUuQJUfCYancmeO+8XSkDzN/3HvpKyWWmUWNlmVvbVnTVxfp3/Y4YshuNfyuP/gXOGoz/ZzQVoq+GJ4gaEr6VZgEv9DCfFQr5HhZQLj1Zc1oQaxB//YrBkw9Yhx7hHSW/qwyrqJEjzA0EEIixNfQm+qdYv4PR1Zzmue9XhGMXpQiymEYo90DJomBPVwVII1OimgIXtDgJQebAxPxvwfhodPNTCxit3zn8Z7I8iMrzHoMA4mk4OJPqwP6Gr4iD8+Fg/xO1T2CxZ4C7gLiQx/OnHCAGxZD2BmGQ9WzzriZ727tl4="],
+    "correct_signature": "tBpdMrW3YV8QE2XN0pILnCJP8HG9GjXYFBXYshLhaN9ubv7lCDkVJJo1cTMPWp3fqnrsYPvmJ6m6hzb+42b2p3MElHVuVYDfo8SCS+L9MyV++BLuTQvZsrDvQTdidx9BbNFwZbvGRi41yAFEhcVdf6hQqYe50PS9AhayrhLF9ALkSD7f/s1m/jiReSQd4UP6+WQVam10cOBRgUeHEDu2yNtstOOI+mwcBCprVkQbEtowhqQegFE/0po8Myp+c8VZUvfFujEhRCXsc4wAl6/WJ33xoFDkBJfko0iXU6+x3lJSu5WM4p5hSHNFIuO5pEp+/WG5FOqMKE/hCHWQHO0pOQ==",
+    "digest": "ticzG/wqfkJF/R3yHdCUAoYzbCM=",
+    "signature": "nYVZsxWIVXOGvR1eUd7hGfhdZSa+ukDhcB6M2LjKmwC+tvUTFTKE3C9LvBkVc829Mo2uFPGUcfcDqMDIFt/EtbbuxLxoVKPf6sdQj0qxOlXFAG+zl+kruaOhaU/gAz01lhz+gDh8g7x+DPlO4LZcPnktL7+FiKJtxXP0mOCve1qPO4N+P1/ubCDqnQJLmt4kSEFYPLw3LhMj3Bpfo4rj7t3b9jr269uBezvvnlf77dL6niG70FG2h87XvvY6IxLm8qjYFcX0ZCkpCQorf+jrf3vGcc9xeEkfRRz+5y0CVCPxWnJ7IYF3taqvtBN0lT9+DjqbLr4UPlL7ShX7A672jg=="
+  }
+}

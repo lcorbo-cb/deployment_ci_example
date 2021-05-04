@@ -1,0 +1,10 @@
+# Hibernation:
+#   Enabled: true
+OperationsCenter:
+  ServiceType: "ClusterIP"
+  Ingress:
+    tls:
+      Enable: true
+      SecretName: "ingress-cert-secret"
+    annotations:
+      cloud.google.com/load-balancer-type: "Internal"

@@ -1,0 +1,15 @@
+{
+    "displayName": "Team02",
+    "icon": {
+        "color": "#dd6669",
+        "name": "truck"
+    },
+    "members": [
+        {
+            "id": "lcorbo",
+            "role": "TEAM_ADMIN"
+        }
+    ],
+    "name": "Team02",
+    "recipe": "basic"
+}

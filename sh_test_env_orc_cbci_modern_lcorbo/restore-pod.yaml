@@ -1,0 +1,20 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: rescue-pod
+spec:
+  securityContext:
+    runAsUser: 1000
+    fsGroup: 1000
+  volumes:
+    - name: rescue-storage
+      persistentVolumeClaim:
+       claimName: jenkins-home-cjoc-0
+  containers:
+    - name: cli-tools
+      image: lcorbocb/cli-tools
+      command: ["/bin/sh"]
+      args: ["-c", "while true; do echo hello; sleep 10;done"]
+      volumeMounts:
+        - mountPath: "/var/jenkins-home"
+          name: rescue-storage

@@ -1,0 +1,4 @@
+# Hibernation:
+#   Enabled: true
+OperationsCenter:
+  ServiceType: "ClusterIP"

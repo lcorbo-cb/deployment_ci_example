@@ -1,0 +1,19 @@
+controller:
+  scope:
+    enabled: true
+    namespace: "cloudbees-core"
+  defaultTLS:
+    secret: "cloudbees-core/ingress-cert-secret"
+  replicaCount: 1
+  service:
+    type: "LoadBalancer"
+    targetPorts:
+      http: https
+      https: https
+    annotations:
+      cloud.google.com/load-balancer-type: "Internal"
+    externalTrafficPolicy: "Local"
+rbac:
+  create: true
+defaultBackend:
+  enabled: false

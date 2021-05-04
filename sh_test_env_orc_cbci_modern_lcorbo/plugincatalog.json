@@ -1,0 +1,19 @@
+{
+    "type" : "plugin-catalog",
+    "version" : "1",
+    "name" : "additional-pipeline-plugins",
+    "displayName" : "Additional Pipeline plugins",
+    "configurations" : [
+        {
+            "description" : "Additional Pipeline plugins for masters versions 2.89+",
+            "includePlugins" : {
+                "cloudbees-casc-api": {
+                    "version" : "0.7"
+                },
+                "manage-permission": {
+                    "version" : "1.0.1"
+                }
+            }
+        }
+    ]
+}

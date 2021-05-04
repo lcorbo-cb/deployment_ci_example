@@ -1,0 +1,21 @@
+#    allowExternalAgents: false, #boolean
+#    clusterEndpointId: "default", #String
+cpus: 1.0 #Double
+disk: 50 #Integer #
+#    domain: "test-custom-domain-1", #String
+#envVars    : "APP_NUMBERS=${appNumbers}" #String
+#    fsGroup: "1000", #String
+#    image: "custom-image-name", #String -- set this up in Operations Center Docker Image configuration
+#    javaOptions: "${KubernetesMasterProvisioning.JAVA_OPTIONS} -Djenkins.install.runSetupWizard=false ", #String
+#    jenkinsOptions:"", #String
+#    kubernetesInternalDomain: "cluster.local", #String
+#    livenessInitialDelaySeconds: 300, #Integer
+#    livenessPeriodSeconds: 10, #Integer
+#    livenessTimeoutSeconds: 10, #Integer
+memory: 4096 #Integer
+#    namespace: null, #String
+#    nodeSelectors: null, #String
+#    ratio: 0.7, #Double
+#    storageClassName: null, #String
+#    systemProperties:"", #String
+#    terminationGracePeriodSeconds: 1200, #Integer

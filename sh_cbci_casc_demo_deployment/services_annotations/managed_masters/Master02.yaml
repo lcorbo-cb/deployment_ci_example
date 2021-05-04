@@ -1,0 +1,7 @@
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/path: /Master02/prometheus/
+    prometheus.io/port: "443"
+    prometheus.io/scheme: https
+    prometheus.io/scrape: "true"

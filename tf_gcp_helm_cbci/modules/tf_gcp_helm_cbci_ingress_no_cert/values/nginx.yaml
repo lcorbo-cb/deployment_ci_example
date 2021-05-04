@@ -1,0 +1,14 @@
+controller:
+  # defaultTLS:
+  #   secret: "nginx-ingress/ingress-cert-secret"
+  replicaCount: 1
+  service:
+    type: "LoadBalancer"
+    targetPorts:
+      http: http
+      https: http
+    annotations:
+      cloud.google.com/load-balancer-type: "Internal"
+    externalTrafficPolicy: "Local"
+# rbac:
+#   create: true

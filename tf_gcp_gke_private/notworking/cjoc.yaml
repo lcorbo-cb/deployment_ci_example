@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-12-20T23:55:11Z"
+  labels:
+    app.kubernetes.io/component: cjoc
+    app.kubernetes.io/instance: cloudbees-core
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: cloudbees-core
+    helm.sh/chart: cloudbees-core-3.24.1_80dadc174346
+  name: cjoc
+  namespace: cloudbees-core
+  resourceVersion: "216550"
+  selfLink: /api/v1/namespaces/cloudbees-core/services/cjoc
+  uid: 81b64ca9-62a8-4ebf-b5df-680affd0737a
+spec:
+  clusterIP: 10.65.14.151
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  - name: jnlp
+    port: 50000
+    protocol: TCP
+    targetPort: 50000
+  selector:
+    app.kubernetes.io/component: cjoc
+    com.cloudbees.cje.tenant: cjoc
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
