@@ -9,7 +9,7 @@ resource "google_container_cluster" "cluster" {
   subnetwork               = var.subnetwork
   logging_service          = var.logging_service
   monitoring_service       = var.monitoring_service
-  min_master_version       = "1.18.16-gke.502"
+  min_master_version       = "1.19.9-gke.1900"
   enable_legacy_abac       = false
   remove_default_node_pool = true
   initial_node_count       = 1

@@ -11,7 +11,8 @@ output "client_certificate" {
 }
 
 output "client_key" {
-  value = module.gke_cluster.client_key
+  value     = module.gke_cluster.client_key
+  sensitive = true
 }
 
 output "endpoint" {
