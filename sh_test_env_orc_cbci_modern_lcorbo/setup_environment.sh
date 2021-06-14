@@ -34,10 +34,10 @@ bash bash_scripts/set_cjoc_root.sh $URL $USERNAME
 bash bash_scripts/config_health_adviser.sh $URL $USERNAME
 apply_tf_environment tf_jenkins_cjoc
 echo "Cloudbees Modern inital setup complete."
-
-bash bash_scripts/upload_casc_bundle.sh $URL $USERNAME
-# bash bash_scripts/upload_team_casc_bundle.sh $URL $USERNAME
-bash bash_scripts/provision_managed_masters.sh $URL $USERNAME
-# bash bash_scripts/provision_team_masters.sh $URL $USERNAME
-apply_tf_environment tf_jenkins_managed_masters
-apply_tf_environment tf_jenkins_team_masters
+#
+# bash bash_scripts/upload_casc_bundle.sh $URL $USERNAME
+# # bash bash_scripts/upload_team_casc_bundle.sh $URL $USERNAME
+# bash bash_scripts/provision_managed_masters.sh $URL $USERNAME
+# # bash bash_scripts/provision_team_masters.sh $URL $USERNAME
+# apply_tf_environment tf_jenkins_managed_masters
+# apply_tf_environment tf_jenkins_team_masters
