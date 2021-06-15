@@ -1,6 +1,0 @@
-removeStrategy:
-  rbac: SYNC
-  items: NONE
-items:
-- kind: folder
-  name: red_jobs
