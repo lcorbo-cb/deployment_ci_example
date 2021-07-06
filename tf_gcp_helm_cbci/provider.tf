@@ -17,12 +17,12 @@ provider "helm" {
   }
 }
 
-# terraform {
-#   backend "gcs" {
-#     bucket = "lcorbo-sandbox-d79dc401"
-#     prefix = "cbci_helm_state"
-#   }
-# }
+terraform {
+  backend "gcs" {
+    bucket = "lcorbo-sandbox-d79dc401"
+    prefix = "cbci_helm_state"
+  }
+}
 
 data "terraform_remote_state" "cluster" {
   backend = "gcs"
