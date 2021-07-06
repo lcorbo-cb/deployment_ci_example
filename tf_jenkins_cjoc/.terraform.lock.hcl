@@ -5,6 +5,7 @@ provider "registry.terraform.io/taiidani/jenkins" {
   version     = "0.7.0-beta3"
   constraints = "0.7.0-beta3"
   hashes = [
+    "h1:292xIu7OgLLuEtfDY9MQcBtBlGnwn5hGPmqF8xjefhU=",
     "h1:9abQ88kqzei9JmrNm4/h6t9wWCh5SDwpVdIMsD/Hayk=",
     "zh:02224b23b3f725ac19ebed99dce3e3f65cebcc7560daea7bbb860a929e2bbd3c",
     "zh:0b3073073e6514b8857a26edd66bbf346830b21623e0144f4a845f57737e51c5",

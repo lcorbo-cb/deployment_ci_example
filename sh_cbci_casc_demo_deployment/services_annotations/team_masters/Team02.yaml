@@ -1,7 +1,0 @@
-kind: Service
-metadata:
-  annotations:
-    prometheus.io/path: /Team02/prometheus/
-    prometheus.io/port: "443"
-    prometheus.io/scheme: https
-    prometheus.io/scrape: "true"
